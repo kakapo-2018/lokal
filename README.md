@@ -4,8 +4,7 @@
 
 LOKAL is a local story telling app for Iwi to tell their stories about their places. 
 
-LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Maori eyes. We hope you enjoy exploring. Ka kite!
-
+LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Māori eyes. We hope you enjoy exploring. Ka kite!
 https://lokalstories.herokuapp.com/#/
 
 

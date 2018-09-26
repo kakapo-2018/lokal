@@ -1,26 +1,11 @@
-# lokal
+# LOKAL
+LOKAL is a local story telling app for Iwi to tell their stories about their places. 
 
-## Final Group Project  <to update>
-  
+LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Maori eyes. We hope you enjoy exploring. Ka kite!
+
 ## HEROKU LINK: https://lokalstories.herokuapp.com/#/
 
-## User Stories
 
-### MVP
-
-As a user:
-  * As a tourist user I want to access the app without any authentication, get a brief intro into what the app does and enter into exploring the region I am in.
-  * I want to enter in and select the Iwi from which I wan't a story in the region I'm exploring. I'd like to then select from the Iwi's available stories to explore based on a map and then explore that story I select. 
- 
-As a contributer:
-  * As an Iwi representative I'd like to register to submit stories from my Iwi about our journey within a certain region.
-  * I'd like to be able to view submitted stories, edit/update them, delete them and add new stories.
-
-### Stretch
-  * I want
-  * I'd like to be able to see how many people have viewed each of the stories in my Iwi's portfolio.
-
-  ---
   
 ## Terms of Engagment
  * Take breaks before you need to take breaks 
@@ -82,6 +67,24 @@ As a contributer:
   |1.30pm-5.00pm |  Presentation prep  |
   |5.00pm-6.00pm |  Presentation celbration |
  
+ 
+ ## User Stories
+
+### MVP
+
+As a user:
+  * As a tourist user I want to access the app without any authentication, get a brief intro into what the app does and enter into exploring the region I am in.
+  * I want to enter in and select the Iwi from which I wan't a story in the region I'm exploring. I'd like to then select from the Iwi's available stories to explore based on a map and then explore that story I select. 
+ 
+As a contributer:
+  * As an Iwi representative I'd like to register to submit stories from my Iwi about our journey within a certain region.
+  * I'd like to be able to view submitted stories, edit/update them, delete them and add new stories.
+
+### Stretch
+  * I want
+  * I'd like to be able to see how many people have viewed each of the stories in my Iwi's portfolio.
+
+  ---
 
 ## Reducers (Client Side)  <to update>
 

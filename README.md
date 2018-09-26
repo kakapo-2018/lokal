@@ -37,10 +37,14 @@ Sprint 3
 
 
 ## Views (Client Side) <to update>
-  | name | purpose |
+  |time | task |
   | --- | --- |
   |Thursday |   |
-  |9.00am 12.00pm |  Sprint 1  |
+  |9.00am-12.00pm |  Sprint 1  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 2  |
+  |5.00pm-6.00pm |  Dinner |
+  |6.00pm-onwards stretch |  Sprint/Stretch Web app to be completed and deployed by COP |
   
   
 

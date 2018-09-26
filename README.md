@@ -22,6 +22,17 @@ As a contributer:
 
   ---
   
+## Terms of Engagment
+ * Take breaks before you need to take breaks 
+ * Take a walk every three hours 
+ * Anyone can call a stand up at anytime to discuss anything 
+ * Practice self care 
+ * Practice self love 
+ * Look after one another 
+ * Eat good food -  each person to do a dinner (partners very welcome)
+ * Be loud, be honest and open about how you are doing with the team 
+ * Do a fist to five check in 
+
 
 
 ## Programme
@@ -51,7 +62,7 @@ As a contributer:
   |9.00am-12.00pm |  Sprint 7  |
   |12.00pm-1.30pm |  Lunch |
   |1.30pm-5.00pm |  Sprint 8  |
-  |5.00pm-6.00pm |  Dinner - Robbie |
+  |5.00pm-6.00pm |  Dinner - Matt (Robbie off at antenatal class) |
   |6.00pm-onwards stretch |  Sprint/Stretch|
   |Tuesday |   |
   |9.00am-12.00pm |  Sprint 9  |
@@ -71,11 +82,6 @@ As a contributer:
   |1.30pm-5.00pm |  Presentation prep  |
   |5.00pm-6.00pm |  Presentation celbration |
  
- 
- 
-  
-  
-
 
 ## Reducers (Client Side)  <to update>
 

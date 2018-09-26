@@ -1,9 +1,12 @@
 # LOKAL
+
+<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijd7X4nIQUK5ZaIIwmnW0laoKqh91xM-_tOQs7-imOf7V047lMA' >
+
 LOKAL is a local story telling app for Iwi to tell their stories about their places. 
 
 LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Maori eyes. We hope you enjoy exploring. Ka kite!
 
-## HEROKU LINK: https://lokalstories.herokuapp.com/#/
+https://lokalstories.herokuapp.com/#/
 
 
   

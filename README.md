@@ -55,12 +55,15 @@ As a contributer:
 ## API (Client - Server)
 
 User:
+
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
 | Get | /api/iwi | No | create list for selection | An array of Iwi details |
+
 Do we Need a get location?
 
 Contributer:
+
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
 | Get | /api/iwi | No | create list for selection | An array of Iwi details |

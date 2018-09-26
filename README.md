@@ -21,10 +21,27 @@ As a contributer:
   * I'd like to be able to see how many people have viewed each of the stories in my Iwi's portfolio.
 
   ---
+  
+### Programme
+
+  | Time | task |
+  | --- | --- |
+  
+
+9.00am-12.00pm 
+Sprint 1 
+1.30pm-5.00pm 
+Sprint 2
+6.00pm-8-9ish
+Sprint 3
+
 
 ## Views (Client Side) <to update>
   | name | purpose |
   | --- | --- |
+  |Thursday |   |
+  |9.00am 12.00pm |  Sprint 1  |
+  
   
 
 

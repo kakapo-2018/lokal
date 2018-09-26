@@ -22,29 +22,57 @@ As a contributer:
 
   ---
   
-### Programme
-
-  | Time | task |
-  | --- | --- |
-  
-
-9.00am-12.00pm 
-Sprint 1 
-1.30pm-5.00pm 
-Sprint 2
-6.00pm-8-9ish
-Sprint 3
 
 
-## Views (Client Side) <to update>
+## Programme
   |time | task |
   | --- | --- |
   |Thursday |   |
   |9.00am-12.00pm |  Sprint 1  |
-  |12.00pm-1.30pm |  Lunch |
+  |12.00pm-1.30pm |  Lunch (Ben out with brother) |
   |1.30pm-5.00pm |  Sprint 2  |
-  |5.00pm-6.00pm |  Dinner |
+  |5.00pm-6.00pm |  Dinner  - Dani |
   |6.00pm-onwards stretch |  Sprint/Stretch Web app to be completed and deployed by COP |
+  |Friday |   |
+  |9.00am-12.00pm |  Sprint 3  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 4  |
+  |5.00pm-6.00pm |  Dinner - Matt |
+  |6.00pm-onwards stretch |  Sprint/Stretch Mobile app |
+  |Saturday |   |
+  |All day | optional work on stretch (Matt in Wairarapa) |
+  |Sunday |   |
+  |9.00am-12.00pm |  Sprint 5  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 6  |
+  |5.00pm-6.00pm |  Dinner - Ben |
+  |6.00pm-onwards stretch |  Sprint/Stretch MVP to be complete by close of play |
+  |Monday |   |
+  |9.00am-12.00pm |  Sprint 7  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 8  |
+  |5.00pm-6.00pm |  Dinner - Robbie |
+  |6.00pm-onwards stretch |  Sprint/Stretch|
+  |Tuesday |   |
+  |9.00am-12.00pm |  Sprint 9  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 10  |
+  |5.00pm-6.00pm |  Dinner - Dani |
+  |6.00pm-onwards stretch |  Sprint/Stretch feature freeze to be completed by close of play|
+  |Wednesday |   |
+  |9.00am-12.00pm |  Sprint 11  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 12  |
+  |5.00pm-6.00pm |  Dinner - Ben |
+  |6.00pm-onwards stretch |  Sprint/Stretch Code freeze to be completed by close of play Midnight|
+  |Thursday |   |
+  |9.00am-12.00pm |  Presentation prep |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Presentation prep  |
+  |5.00pm-6.00pm |  Presentation celbration |
+ 
+ 
+ 
   
   
 

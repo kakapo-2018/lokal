@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-class About extends React.Component {
+class Bibliography extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -20,6 +20,30 @@ class About extends React.Component {
           </a>
           <br />
           <br />
+
+          <a className="links" href="http://www.ngatitoa.iwi.nz//">
+            http://www.ngatitoa.iwi.nz//
+          </a>
+          <br />
+          <br />
+
+          <a className="links" href="https://www.raukawa.org.nz/">
+            https://www.raukawa.org.nz/
+          </a>
+          <br />
+          <br />
+
+          <a className="links" href="http://teatiawakikapiti.co.nz/">
+            http://teatiawakikapiti.co.nz/
+          </a>
+          <br />
+          <br />
+
+          <a className="links" href="https://www.kahungunu.iwi.nz/">
+            https://www.kahungunu.iwi.nz/
+          </a>
+          <br />
+          <br />
         </h4>
 
         <hr />
@@ -28,4 +52,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Bibliography;

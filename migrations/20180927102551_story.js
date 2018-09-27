@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     table.integer('latitude')
     table.integer('longitude')
     table.string('content',1000)
-    table.string('image',500)
+    table.string('image',1000)
   })
 };
 

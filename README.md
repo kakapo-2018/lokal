@@ -1,6 +1,6 @@
 # LOKAL
 
-<img src='https://vectr.com/mattr_kakapo/e2szTdvdgC.png?width=880&height=100&select=d2A25ttWmW' >
+<img src='https://ibb.co/edSxj9' >
 
 LOKAL is a local story telling app for Iwi to tell their stories about their places. 
 

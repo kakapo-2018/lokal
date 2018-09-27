@@ -128,9 +128,9 @@ Contributer:
 
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
-| Post | /api/story/:id | No | submit a story | Posts a new story |
-| Put | /api/story/:id | No | edit a story | An array of contributer stories |
-| Del | /api/story/:id | No | delete a story | Contributer removes a story |
+| Post | /api/story/:id | Yes | submit a story | Posts a new story |
+| Put | /api/story/:id | Yes | edit a story | An array of contributer stories |
+| Del | /api/story/:id | Yes | delete a story | Contributer removes a story |
 
 
 

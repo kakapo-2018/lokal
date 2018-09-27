@@ -26642,6 +26642,14 @@ var _Viewstory = __webpack_require__(121);
 
 var _Viewstory2 = _interopRequireDefault(_Viewstory);
 
+var _Postregister = __webpack_require__(122);
+
+var _Postregister2 = _interopRequireDefault(_Postregister);
+
+var _Contact = __webpack_require__(123);
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App(_ref) {
@@ -26668,6 +26676,8 @@ var App = function App(_ref) {
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Experience", component: _Experience2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Iwilanding", component: _Iwilanding2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Viewstory", component: _Viewstory2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Contact", component: _Contact2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Postregister", component: _Postregister2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Bibliography", component: _Bibliography2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/register", component: (_Login2.default, _Register2.default) }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Journeylist", component: (_Login2.default, _Journeylist2.default) })
@@ -28701,6 +28711,16 @@ var About = function (_React$Component) {
           _react2.default.createElement("br", null),
           "We hope you enjoy exploring. Ka kite!"
         ),
+        _react2.default.createElement(
+          "button",
+          { type: "button", "class": "btn btn-block" },
+          "Contact us"
+        ),
+        _react2.default.createElement(
+          "button",
+          { type: "button", "class": "btn btn-block" },
+          "Our Biliography"
+        ),
         _react2.default.createElement("hr", null)
       );
     }
@@ -28901,11 +28921,6 @@ var Header = function (_React$Component) {
             "a",
             { "class": "header-text", href: "#" },
             "about"
-          ),
-          _react2.default.createElement(
-            "a",
-            { "class": "header-text", href: "#" },
-            "contact"
           )
         )
       );
@@ -29787,6 +29802,237 @@ var Viewstory = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Viewstory;
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(2);
+
+var _reactRouterDom = __webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About(props) {
+    _classCallCheck(this, About);
+
+    var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(About, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          auth = _props.auth,
+          logout = _props.logout;
+
+      return _react2.default.createElement(
+        "div",
+        { className: "container mainpage" },
+        _react2.default.createElement("hr", null),
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Kia ora rawa atu!"
+        ),
+        _react2.default.createElement(
+          "h4",
+          null,
+          "Thank you for registering. A member of our team will be in touch shortly to confirm your registration.",
+          _react2.default.createElement("br", null),
+          _react2.default.createElement("br", null)
+        ),
+        _react2.default.createElement(
+          "button",
+          { type: "button", "class": "btn btn-block" },
+          "Return to Journey"
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("hr", null)
+      );
+    }
+  }]);
+
+  return About;
+}(_react2.default.Component);
+
+exports.default = About;
+
+/***/ }),
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(2);
+
+var _reactRouterDom = __webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+  _inherits(Contact, _React$Component);
+
+  function Contact(props) {
+    _classCallCheck(this, Contact);
+
+    var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Contact, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          auth = _props.auth,
+          logout = _props.logout;
+
+      return _react2.default.createElement(
+        "div",
+        { className: "container mainpage" },
+        _react2.default.createElement("hr", null),
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Contact"
+        ),
+        _react2.default.createElement(
+          "h3",
+          null,
+          "LOKAL was developed by;"
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "div",
+          { className: "row" },
+          _react2.default.createElement(
+            "div",
+            { className: "col-lg-3" },
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/dani-smith" },
+              _react2.default.createElement("img", {
+                className: "Profile-image",
+                src: "https://avatars1.githubusercontent.com/u/24470414?s=460&v=4"
+              }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "h3",
+                { className: "contact-links" },
+                "Dani"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "col-lg-3" },
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/ben-vandelaar" },
+              _react2.default.createElement("img", {
+                className: "Profile-image",
+                src: "https://avatars0.githubusercontent.com/u/32469338?s=460&v=4"
+              }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "h3",
+                { className: "contact-links" },
+                "Ben"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "col-lg-3" },
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/Rob-Bee-Neilson" },
+              _react2.default.createElement("img", {
+                className: "Profile-image",
+                src: "https://avatars1.githubusercontent.com/u/35246811?s=460&v=4"
+              }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "h3",
+                { className: "contact-links" },
+                "Robbie"
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "col-lg-3" },
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/mattritani" },
+              _react2.default.createElement("img", {
+                className: "Profile-image",
+                src: "https://avatars3.githubusercontent.com/u/33272889?s=460&v=4"
+              }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "h3",
+                { className: "contact-links" },
+                "Matt"
+              )
+            )
+          )
+        ),
+        _react2.default.createElement("hr", null)
+      );
+    }
+  }]);
+
+  return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
 
 /***/ })
 /******/ ]);

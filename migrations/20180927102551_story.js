@@ -4,8 +4,8 @@ exports.up = function(knex, Promise) {
     table.increments('id').primary
     table.integer('iwi_id')
     table.string('title')
-    table.integer('latitude')
-    table.integer('longitude')
+    table.string('latitude')
+    table.string('longitude')
     table.string('content',1000)
     table.string('image',1000)
   })

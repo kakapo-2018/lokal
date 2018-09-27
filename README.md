@@ -1,5 +1,3 @@
-# LOKAL
-
 <img src='https://image.ibb.co/foucj9/untitled.png' >
 
 LOKAL is a local story telling app for Iwi to tell their stories about their places. 
@@ -7,9 +5,6 @@ LOKAL is a local story telling app for Iwi to tell their stories about their pla
 LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Māori eyes. We hope you enjoy exploring. Ka kite!
 https://lokalstories.herokuapp.com/#/
 
-
-  
-## HEROKU LINK: https://lokalstories.herokuapp.com/#/
 ## Terms of Engagment
  * Take breaks before you need to take breaks 
  * Take a walk every three hours 

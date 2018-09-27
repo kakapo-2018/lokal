@@ -9,6 +9,7 @@ https://lokalstories.herokuapp.com/#/
 
 
   
+## HEROKU LINK: https://lokalstories.herokuapp.com/#/
 ## Terms of Engagment
  * Take breaks before you need to take breaks 
  * Take a walk every three hours 
@@ -136,7 +137,7 @@ Contributer:
 ## DB (Server Side)
   There should be three tables for MVP
 
-### iwi
+### users
   | Column Name | Data Type |
   | --- | --- |
   | id | Integer |
@@ -164,6 +165,7 @@ Contributer:
   | IWI_ID | Interger |
   | content | String |
   | image | Image |
+  
 
 
  ---

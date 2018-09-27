@@ -1,0 +1,39 @@
+body {
+  background-color: #952e46;
+}
+
+img.logo {
+  max-width: 20px;
+  max-width: 20px;
+}
+
+a.header-text {
+  color: white;
+  padding-left: 15px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+}
+div.py-2 {
+  background-color: #6c2132;
+}
+
+container-mainpage {
+  align-content: center;
+}
+
+hr {
+  border-color: white;
+  border-top-width: 2px;
+}
+
+h1 {
+  color: white;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  color: white;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+}

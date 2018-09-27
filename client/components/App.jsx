@@ -12,6 +12,11 @@ import Bibliography from "./Bibliography";
 import Overview from "./Overview";
 import Mapview from "./Mapview";
 import Login from "./Login";
+import Addedit from "./Addedit";
+import Journeylist from "./Journeylist";
+import Experience from "./Experience";
+import Iwilanding from "./Iwilanding";
+import Viewstory from "./Viewstory";
 
 const App = ({ auth }) => (
   <Router>
@@ -28,8 +33,13 @@ const App = ({ auth }) => (
         <Route exact path="/Header" component={Header} />
         <Route exact path="/Overview" component={Overview} />
         <Route exact path="/logout" component={Logout} />
+        <Route exact path="/Addedit" component={Addedit} />
+        <Route exact path="/Experience" component={Experience} />
+        <Route exact path="/Iwilanding" component={Iwilanding} />
+        <Route exact path="/Viewstory" component={Viewstory} />
         <Route exact path="/Bibliography" component={Bibliography} />
         <Route exact path="/register" component={(Login, Register)} />
+        <Route exact path="/Journeylist" component={(Login, Journeylist)} />
       </div>
     </div>
   </Router>

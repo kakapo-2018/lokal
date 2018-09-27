@@ -82,6 +82,13 @@ h4 {
   font-size: 20px;
 }
 
+h4.black {
+  color: black;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
 h5 {
   color: white;
   font-family: "Merriweather", serif;

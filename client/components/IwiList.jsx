@@ -11,17 +11,22 @@ class IwiList extends React.Component {
   render() {
     const { auth, logout } = this.props;
     return (
-      <div className="container">
+      <div className="container journey-container">
         <hr />
         <h1>Haere Mai! </h1>
         <h3>Welcome to Te Whanganui a Tara Wellington</h3>
-        <h2>Journey</h2>
-        <button type="button" class="btn btn-outline-primary">
-          Te Ati Awa
-        </button>
-        <button type="button" class="btn btn-outline-primary">
-          Ngati Toa
-        </button>
+
+        <hr />
+        <div class="jumbotron">
+          <h2 className="Journey">Journey</h2>
+
+          <button type="button" class="btn btn-block">
+            Te Ati Awa
+          </button>
+          <button type="button" class="btn btn-block">
+            Ngati Toa
+          </button>
+        </div>
       </div>
     );
   }

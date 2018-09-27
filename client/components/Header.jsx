@@ -16,17 +16,17 @@ class Header extends React.Component {
           <a class="header-text" href="#">
             <img className="logo" src="logowhite.svg" />
           </a>
-          <a class="header-text" href="#">
-            Iwi Login
+          <a class="header-text" href="./about">
+            login
           </a>
           <a class="header-text" href="#">
-            Iwi register
+            register
           </a>
           <a class="header-text" href="#">
-            About
+            about
           </a>
           <a class="header-text" href="#">
-            Contact
+            contact
           </a>
         </div>
       </div>

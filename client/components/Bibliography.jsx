@@ -11,8 +11,18 @@ class About extends React.Component {
   render() {
     const { auth, logout } = this.props;
     return (
-      <div className="container title">
-        <img src="titlelarge.svg" className="header-title" />
+      <div className="container mainpage">
+        <hr />
+        <h1>Bibliography</h1>
+        <h4>
+          <a className="links" href="https://teatiawa.iwi.nz/">
+            https://teatiawa.iwi.nz/
+          </a>
+          <br />
+          <br />
+        </h4>
+
+        <hr />
       </div>
     );
   }

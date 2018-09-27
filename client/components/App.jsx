@@ -9,6 +9,7 @@ import Register from "./Register";
 import Header from "./Header";
 import Bodyheader from "./Bodyheader";
 import IwiList from "./IwiList";
+import Bibliography from "./Bibliography";
 
 const App = ({ auth }) => (
   <Router>
@@ -25,6 +26,7 @@ const App = ({ auth }) => (
         <Route exact path="/Header" component={Header} />
 
         <Route exact path="/logout" component={Logout} />
+        <Route exact path="/Bibliography" component={Bibliography} />
         <Route exact path="/register" component={(Login, Register)} />
       </div>
     </div>

@@ -11,14 +11,23 @@ class About extends React.Component {
   render() {
     const { auth, logout } = this.props;
     return (
-      <div className="navbar-end">
+      <div className="container mainpage">
+        <hr />
         <h1>About</h1>
-        <p>
+        <h4>
           LOKAL is a local story telling app for Iwi to tell their stories about
-          their places. LOKAL works with Iwi to create walking tours of cities
-          and allow visitors to experience the depth of the local environment
-          through Maori eyes. We hope you enjoy exploring. Ka kite!
-        </p>
+          their places.
+          <br />
+          <br />
+          LOKAL works with Iwi to create walking tours of cities and allow
+          visitors to experience the depth of the local environment through
+          Maori eyes.
+          <br />
+          <br />
+          We hope you enjoy exploring. Ka kite!
+        </h4>
+
+        <hr />
       </div>
     );
   }

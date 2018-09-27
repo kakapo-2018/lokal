@@ -2,7 +2,7 @@
 
 ## Final Group Project  <to update>
   
-
+## HEROKU LINK: https://lokalstories.herokuapp.com/#/
 
 ## User Stories
 
@@ -76,7 +76,7 @@ Contributer:
 ## DB (Server Side)
   There should be three tables for MVP
 
-### iwi
+### users
   | Column Name | Data Type |
   | --- | --- |
   | id | Integer |
@@ -104,16 +104,7 @@ Contributer:
   | IWI_ID | Interger |
   | content | String |
   | image | Image |
-
-### Attendees (Join Table M2M)
-
-  Many Users attend Many Meetings
-
- | Column Name | Data Type |
- | --- | --- |
- | user_id | Integer |
- | meeting_id | Integer |
-
+  
  ---
 
 

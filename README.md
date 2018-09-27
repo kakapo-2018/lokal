@@ -35,7 +35,7 @@ https://lokalstories.herokuapp.com/#/
   |9.00am-12.00pm |  Sprint 3 - deploy |
   |12.00pm-1.30pm |  Lunch |
   |1.30pm-5.00pm |  Sprint 4  - deploy |
-  |5.00pm-6.00pm |  Dinner - Matt |
+  |5.00pm-6.00pm |  Dinner - Robbie |
   |6.00pm-onwards stretch |  Sprint/Stretch Mobile app |
   |Saturday |   |
   |All day | optional work on stretch (Matt in Wairarapa) |

@@ -118,6 +118,9 @@ User:
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
 | Get | /api/iwi | No | create list for selection | An array of Iwi details |
+| Get | /api/iwiinfo/:id | No | create list for selection | Gets Iwi info by id |
+| Get | /api/story/:id | No | create list for selection | Gets story by id |
+| Get | /api/story/iwi/:id | No | create list for selection | Gets a list of Iwi's stories by Iwi id. |
 
 Do we Need a get location?
 
@@ -125,10 +128,9 @@ Contributer:
 
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
-| Get | /api/iwi | No | create list for selection | An array of Iwi details |
-| Post | /api/iwi/story | No | submit a story | An array of contributer stories |
-| Put | /api/iwi/story/:ID | No | edit a story | An array of contributer stories |
-| Del | /api/iwi/story/:ID | No | delete a story | Contributer removes a story |
+| Post | /api/story/:id | No | submit a story | Posts a new story |
+| Put | /api/story/:id | No | edit a story | An array of contributer stories |
+| Del | /api/story/:id | No | delete a story | Contributer removes a story |
 
 
 

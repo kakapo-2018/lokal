@@ -1,10 +1,77 @@
-# lokal
+# LOKAL
 
-## Final Group Project  <to update>
+<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijd7X4nIQUK5ZaIIwmnW0laoKqh91xM-_tOQs7-imOf7V047lMA' >
+
+LOKAL is a local story telling app for Iwi to tell their stories about their places. 
+
+LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Māori eyes. We hope you enjoy exploring. Ka kite!
+https://lokalstories.herokuapp.com/#/
+
+
   
 ## HEROKU LINK: https://lokalstories.herokuapp.com/#/
+## Terms of Engagment
+ * Take breaks before you need to take breaks 
+ * Take a walk every three hours 
+ * Anyone can call a stand up at anytime to discuss anything 
+ * Practice self care 
+ * Practice self love 
+ * Look after one another 
+ * Eat good food -  each person to do a dinner (partners very welcome)
+ * Be loud, be honest and open about how you are doing with the team 
+ * Do a fist to five check in 
 
-## User Stories
+
+
+## Programme
+  |time | task |
+  | --- | --- |
+  |Thursday |   |
+  |9.00am-12.00pm |  Sprint 1 - deploy |
+  |12.00pm-1.30pm |  Lunch (Ben out with brother) |
+  |1.30pm-5.00pm |  Sprint 2  - deploy|
+  |5.00pm-6.00pm |  Dinner  - Dani |
+  |6.00pm-onwards stretch |  Sprint/Stretch Web app to be completed and deployed by COP |
+  |Friday |   |
+  |9.00am-12.00pm |  Sprint 3 - deploy |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 4  - deploy |
+  |5.00pm-6.00pm |  Dinner - Robbie |
+  |6.00pm-onwards stretch |  Sprint/Stretch Mobile app |
+  |Saturday |   |
+  |All day | optional work on stretch (Matt in Wairarapa) |
+  |Sunday |   |
+  |9.00am-12.00pm |  Sprint 5 - deploy  |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 6  - deploy|
+  |5.00pm-6.00pm |  Dinner - Ben |
+  |6.00pm-onwards stretch |  Sprint/Stretch MVP to be complete by close of play |
+  |Monday |   |
+  |9.00am-12.00pm |  Sprint 7 - deploy |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 8  - deploy|
+  |5.00pm-6.00pm |  Dinner - Matt (Robbie off at antenatal class) |
+  |6.00pm-onwards stretch |  Sprint/Stretch|
+  |Tuesday |   |
+  |9.00am-12.00pm |  Sprint 9  - deploy|
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 10  - deploy|
+  |5.00pm-6.00pm |  Dinner - Dani |
+  |6.00pm-onwards stretch |  Sprint/Stretch feature freeze to be completed by close of play|
+  |Wednesday |   |
+  |9.00am-12.00pm |  Sprint 11  - deploy|
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Sprint 12  - deploy|
+  |5.00pm-6.00pm |  Dinner - Ben |
+  |6.00pm-onwards stretch |  Sprint/Stretch Code freeze to be completed by close of play Midnight - deploy|
+  |Thursday |   |
+  |9.00am-12.00pm |  Presentation prep |
+  |12.00pm-1.30pm |  Lunch |
+  |1.30pm-5.00pm |  Presentation prep  |
+  |5.00pm-6.00pm |  Presentation celbration |
+ 
+ 
+ ## User Stories
 
 ### MVP
 
@@ -21,12 +88,6 @@ As a contributer:
   * I'd like to be able to see how many people have viewed each of the stories in my Iwi's portfolio.
 
   ---
-
-## Views (Client Side) <to update>
-  | name | purpose |
-  | --- | --- |
-  
-
 
 ## Reducers (Client Side)  <to update>
 
@@ -105,6 +166,8 @@ Contributer:
   | content | String |
   | image | Image |
   
+
+
  ---
 
 
@@ -204,9 +267,15 @@ Timekeeper: Schedules and calls standups (can be done by the product owner)
 Notes: Create pull requests for all features and have them reviewed by Engie, Kelly or Ross.
 
 
+
+
+
 -----------------------------------------------------------
 Details below here are example deets ripped from another readme...
 -----------------------------------------------------------
+
+
+
 
 
 ## API docs: Request and response formats  <to update>

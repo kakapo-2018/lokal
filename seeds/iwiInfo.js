@@ -5,9 +5,9 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('iwiInfo').insert([
-        {id: 1, iwi_id: '', content: '', image: ''},
-        {id: 2, iwi_id: '', content: '', image: ''},
-        {id: 3, iwi_id: '', content: '', image: ''}
+        {id: 1, iwi_id: 1, content: '', image: ''},
+        {id: 2, iwi_id: 2, content: '', image: ''},
+        {id: 3, iwi_id: 3, content: '', image: ''}
       ]);
     });
 };

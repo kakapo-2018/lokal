@@ -1,62 +1,41 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
-import {loginUser, loginError} from '../actions/login'
+import React from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
-
-class Login extends Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {       
-      user_name: '',
-      password: '' 
-    }
-    this.updateDetails = this.updateDetails.bind(this)
-    this.submit = this.submit.bind(this)
-  }
-    componentDidMount() {
-      this.props.dispatch(loginError(""));
-  }
-    updateDetails(e) {
-      this.setState({[e.target.name]: e.target.value})
-  }
-    submit(e) {
-      e.preventDefault()
-      let {user_name, password} = this.state
-      this.props.dispatch(loginUser({user_name, password}))
+    this.state = {};
   }
 
-  render() { 
-    const {auth} = this.props
+  render() {
+    const { auth, logout } = this.props;
     return (
-      <div>
-        <form onSubmit={this.submit} className="form">
+      <div className="container mainpage">
+        <hr />
         <h1>Login</h1>
-        {auth.errorMessage && <span>{auth.errorMessage}</span>}
-        <label>Username
-        <input required placeholder="User Name" type="text" name="user_name" className="form-control" onChange={this.updateDetails}/>
-        </label>
-        <label>Password
-        <input required placeholder="Password" type="password" name="password" className="form-control" onChange={this.updateDetails}/>
-        </label>
-        <div>
-        <button type="submit" className="btn btn-secondary">Login</button>
+
+        <div class="jumbotron">
+          <div className="form-group">
+            <label>Email address</label>
+            <input className="form-control" label="Email address" />
+            <label>Password</label>
+            <input className="form-control" label="Password" />
+          </div>
+          <button type="button" class="btn btn-primary btn-lg">
+            Submit
+          </button>
+          <br />
+          <br />
+          <a className="password-links" href="http://www.ngatitoa.iwi.nz//">
+            Forgotten your password?
+          </a>
         </div>
-        <br/>
-        <p>Or register here!</p>
-        <br/>
-        <Link to={`/register`}><button type="button" className="btn btn-secondary">Register</button></Link>
-        </form>
+
+        <hr />
       </div>
-     );
-  }
-}
- 
-
-const mapStateToProps = ({auth}) => {
-  return {
-    auth
+    );
   }
 }
 
-export default connect(mapStateToProps)(Login)
+export default Login;

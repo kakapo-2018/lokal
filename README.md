@@ -26,43 +26,43 @@ https://lokalstories.herokuapp.com/#/
   |time | task |
   | --- | --- |
   |Thursday |   |
-  |9.00am-12.00pm |  Sprint 1  |
+  |9.00am-12.00pm |  Sprint 1 - deploy |
   |12.00pm-1.30pm |  Lunch (Ben out with brother) |
-  |1.30pm-5.00pm |  Sprint 2  |
+  |1.30pm-5.00pm |  Sprint 2  - deploy|
   |5.00pm-6.00pm |  Dinner  - Dani |
   |6.00pm-onwards stretch |  Sprint/Stretch Web app to be completed and deployed by COP |
   |Friday |   |
-  |9.00am-12.00pm |  Sprint 3  |
+  |9.00am-12.00pm |  Sprint 3 - deploy |
   |12.00pm-1.30pm |  Lunch |
-  |1.30pm-5.00pm |  Sprint 4  |
+  |1.30pm-5.00pm |  Sprint 4  - deploy |
   |5.00pm-6.00pm |  Dinner - Matt |
   |6.00pm-onwards stretch |  Sprint/Stretch Mobile app |
   |Saturday |   |
   |All day | optional work on stretch (Matt in Wairarapa) |
   |Sunday |   |
-  |9.00am-12.00pm |  Sprint 5  |
+  |9.00am-12.00pm |  Sprint 5 - deploy  |
   |12.00pm-1.30pm |  Lunch |
-  |1.30pm-5.00pm |  Sprint 6  |
+  |1.30pm-5.00pm |  Sprint 6  - deploy|
   |5.00pm-6.00pm |  Dinner - Ben |
   |6.00pm-onwards stretch |  Sprint/Stretch MVP to be complete by close of play |
   |Monday |   |
-  |9.00am-12.00pm |  Sprint 7  |
+  |9.00am-12.00pm |  Sprint 7 - deploy |
   |12.00pm-1.30pm |  Lunch |
-  |1.30pm-5.00pm |  Sprint 8  |
+  |1.30pm-5.00pm |  Sprint 8  - deploy|
   |5.00pm-6.00pm |  Dinner - Matt (Robbie off at antenatal class) |
   |6.00pm-onwards stretch |  Sprint/Stretch|
   |Tuesday |   |
-  |9.00am-12.00pm |  Sprint 9  |
+  |9.00am-12.00pm |  Sprint 9  - deploy|
   |12.00pm-1.30pm |  Lunch |
-  |1.30pm-5.00pm |  Sprint 10  |
+  |1.30pm-5.00pm |  Sprint 10  - deploy|
   |5.00pm-6.00pm |  Dinner - Dani |
   |6.00pm-onwards stretch |  Sprint/Stretch feature freeze to be completed by close of play|
   |Wednesday |   |
-  |9.00am-12.00pm |  Sprint 11  |
+  |9.00am-12.00pm |  Sprint 11  - deploy|
   |12.00pm-1.30pm |  Lunch |
-  |1.30pm-5.00pm |  Sprint 12  |
+  |1.30pm-5.00pm |  Sprint 12  - deploy|
   |5.00pm-6.00pm |  Dinner - Ben |
-  |6.00pm-onwards stretch |  Sprint/Stretch Code freeze to be completed by close of play Midnight|
+  |6.00pm-onwards stretch |  Sprint/Stretch Code freeze to be completed by close of play Midnight - deploy|
   |Thursday |   |
   |9.00am-12.00pm |  Presentation prep |
   |12.00pm-1.30pm |  Lunch |

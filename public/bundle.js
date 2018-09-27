@@ -28819,6 +28819,24 @@ var Register = function (_React$Component) {
             ),
             _react2.default.createElement("input", { className: "form-control", label: "Password" }),
             _react2.default.createElement(
+              "label",
+              null,
+              "Name"
+            ),
+            _react2.default.createElement("input", { className: "form-control", label: "Password" }),
+            _react2.default.createElement(
+              "label",
+              null,
+              "Address"
+            ),
+            _react2.default.createElement("input", { className: "form-control", label: "Password" }),
+            _react2.default.createElement(
+              "label",
+              null,
+              "Phone number"
+            ),
+            _react2.default.createElement("input", { className: "form-control", label: "Password" }),
+            _react2.default.createElement(
               "div",
               null,
               _react2.default.createElement("br", null),
@@ -29532,19 +29550,64 @@ var Addedit = function (_React$Component) {
                 null,
                 "Story"
               ),
-              _react2.default.createElement("input", { className: "form-control", label: "Password" }),
+              _react2.default.createElement("input", { className: "form-control", label: "Email" }),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
                 "label",
                 null,
-                "Image upload"
+                "Image"
               ),
-              _react2.default.createElement("input", { className: "form-control", label: "Password" }),
+              _react2.default.createElement(
+                "div",
+                { "class": "input-group mb-3" },
+                _react2.default.createElement(
+                  "div",
+                  { "class": "input-group-prepend" },
+                  _react2.default.createElement(
+                    "span",
+                    { "class": "input-group-text" },
+                    "Upload Image"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { "class": "custom-file" },
+                  _react2.default.createElement("input", { type: "file", "class": "custom-file-input" }),
+                  _react2.default.createElement(
+                    "label",
+                    { "class": "custom-file-label", "for": "inputGroupFile01" },
+                    "Choose Image"
+                  )
+                )
+              ),
               _react2.default.createElement(
                 "label",
                 null,
-                "Audio upload"
+                "Audio"
               ),
-              _react2.default.createElement("input", { className: "form-control", label: "Password" }),
+              _react2.default.createElement(
+                "div",
+                { "class": "input-group mb-3" },
+                _react2.default.createElement(
+                  "div",
+                  { "class": "input-group-prepend" },
+                  _react2.default.createElement(
+                    "span",
+                    { "class": "input-group-text" },
+                    "Upload Audio"
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { "class": "custom-file" },
+                  _react2.default.createElement("input", { type: "file", "class": "custom-file-input" }),
+                  _react2.default.createElement(
+                    "label",
+                    { "class": "custom-file-label", "for": "inputGroupFile01" },
+                    "Choose Audio"
+                  )
+                )
+              ),
               _react2.default.createElement(
                 "button",
                 { type: "button", className: "btn btn-primary btn-lg" },

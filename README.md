@@ -165,14 +165,6 @@ Contributer:
   | content | String |
   | image | Image |
 
-### Attendees (Join Table M2M)
-
-  Many Users attend Many Meetings
-
- | Column Name | Data Type |
- | --- | --- |
- | user_id | Integer |
- | meeting_id | Integer |
 
  ---
 
@@ -273,9 +265,15 @@ Timekeeper: Schedules and calls standups (can be done by the product owner)
 Notes: Create pull requests for all features and have them reviewed by Engie, Kelly or Ross.
 
 
+
+
+
 -----------------------------------------------------------
 Details below here are example deets ripped from another readme...
 -----------------------------------------------------------
+
+
+
 
 
 ## API docs: Request and response formats  <to update>

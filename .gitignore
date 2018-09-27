@@ -3,3 +3,4 @@ node_modules
 bundle.js
 bundle.js.map
 yarn.lock
+.sqlite3*

@@ -27527,6 +27527,10 @@ var _IwiList = __webpack_require__(123);
 
 var _IwiList2 = _interopRequireDefault(_IwiList);
 
+var _Bibliography = __webpack_require__(124);
+
+var _Bibliography2 = _interopRequireDefault(_Bibliography);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App(_ref) {
@@ -27547,6 +27551,7 @@ var App = function App(_ref) {
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _Login2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Header", component: _Header2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/logout", component: _Logout2.default }),
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Bibliography", component: _Bibliography2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/register", component: (_Login2.default, _Register2.default) })
       )
     )
@@ -30863,17 +30868,25 @@ var About = function (_React$Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "navbar-end" },
+        { className: "container mainpage" },
+        _react2.default.createElement("hr", null),
         _react2.default.createElement(
           "h1",
           null,
           "About"
         ),
         _react2.default.createElement(
-          "p",
+          "h4",
           null,
-          "LOKAL is a local story telling app for Iwi to tell their stories about their places. LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Maori eyes. We hope you enjoy exploring. Ka kite!"
-        )
+          "LOKAL is a local story telling app for Iwi to tell their stories about their places.",
+          _react2.default.createElement("br", null),
+          _react2.default.createElement("br", null),
+          "LOKAL works with Iwi to create walking tours of cities and allow visitors to experience the depth of the local environment through Maori eyes.",
+          _react2.default.createElement("br", null),
+          _react2.default.createElement("br", null),
+          "We hope you enjoy exploring. Ka kite!"
+        ),
+        _react2.default.createElement("hr", null)
       );
     }
   }]);
@@ -31147,23 +31160,23 @@ var Header = function (_React$Component) {
           ),
           _react2.default.createElement(
             "a",
-            { "class": "header-text", href: "#" },
-            "Iwi Login"
+            { "class": "header-text", href: "./about" },
+            "login"
           ),
           _react2.default.createElement(
             "a",
             { "class": "header-text", href: "#" },
-            "Iwi register"
+            "register"
           ),
           _react2.default.createElement(
             "a",
             { "class": "header-text", href: "#" },
-            "About"
+            "about"
           ),
           _react2.default.createElement(
             "a",
             { "class": "header-text", href: "#" },
-            "Contact"
+            "contact"
           )
         )
       );
@@ -31225,7 +31238,7 @@ var About = function (_React$Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "container" },
+        { className: "container title" },
         _react2.default.createElement("img", { src: "titlelarge.svg", className: "header-title" })
       );
     }
@@ -31286,7 +31299,7 @@ var IwiList = function (_React$Component) {
 
       return _react2.default.createElement(
         "div",
-        { className: "container" },
+        { className: "container journey-container" },
         _react2.default.createElement("hr", null),
         _react2.default.createElement(
           "h1",
@@ -31298,20 +31311,25 @@ var IwiList = function (_React$Component) {
           null,
           "Welcome to Te Whanganui a Tara Wellington"
         ),
+        _react2.default.createElement("hr", null),
         _react2.default.createElement(
-          "h2",
-          null,
-          "Journey"
-        ),
-        _react2.default.createElement(
-          "button",
-          { type: "button", "class": "btn btn-outline-primary" },
-          "Te Ati Awa"
-        ),
-        _react2.default.createElement(
-          "button",
-          { type: "button", "class": "btn btn-outline-primary" },
-          "Ngati Toa"
+          "div",
+          { "class": "jumbotron" },
+          _react2.default.createElement(
+            "h2",
+            { className: "Journey" },
+            "Journey"
+          ),
+          _react2.default.createElement(
+            "button",
+            { type: "button", "class": "btn btn-block" },
+            "Te Ati Awa"
+          ),
+          _react2.default.createElement(
+            "button",
+            { type: "button", "class": "btn btn-block" },
+            "Ngati Toa"
+          )
         )
       );
     }
@@ -31321,6 +31339,84 @@ var IwiList = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = IwiList;
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(4);
+
+var _reactRouterDom = __webpack_require__(6);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About(props) {
+    _classCallCheck(this, About);
+
+    var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(About, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          auth = _props.auth,
+          logout = _props.logout;
+
+      return _react2.default.createElement(
+        "div",
+        { className: "container mainpage" },
+        _react2.default.createElement("hr", null),
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Bibliography"
+        ),
+        _react2.default.createElement(
+          "h4",
+          null,
+          _react2.default.createElement(
+            "a",
+            { className: "links", href: "https://teatiawa.iwi.nz/" },
+            "https://teatiawa.iwi.nz/"
+          ),
+          _react2.default.createElement("br", null),
+          _react2.default.createElement("br", null)
+        ),
+        _react2.default.createElement("hr", null)
+      );
+    }
+  }]);
+
+  return About;
+}(_react2.default.Component);
+
+exports.default = About;
 
 /***/ })
 /******/ ]);

@@ -1,12 +1,13 @@
 const router = require("express").Router()
-let {getIwi} = require("../db/users");
+let {getIwiStoriesByIwi} = require("../db/story");
 
 
 // ----------- Get the users of the app
-router.get("/", (req, res) => {
-  getIwi()
-   .then(users => {
-    res.json(users)
+
+router.get("/:id", (req, res) => {
+  getIwiStoriesByIwi(req.params.id)
+   .then(story => {
+    res.json(story)
   })
 
   .catch(err => res.status(500)

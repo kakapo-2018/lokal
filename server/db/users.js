@@ -37,7 +37,7 @@ function getUserByID(user_id) {
     .catch(err => {});
 }
 
-function getUsers() {
+function getIwi() {
   return db('users').select();
 }
 
@@ -46,5 +46,5 @@ module.exports = {
   userExists,
   getUserByName,
   getUserByID,
-  getUsers
+  getIwi
 };

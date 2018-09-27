@@ -25,9 +25,6 @@ class Header extends React.Component {
           <a class="header-text" href="#">
             about
           </a>
-          <a class="header-text" href="#">
-            contact
-          </a>
         </div>
       </div>
     );

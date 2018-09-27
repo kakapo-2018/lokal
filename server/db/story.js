@@ -9,23 +9,27 @@ function getIwiStoriesByIwi(iwi_id) {
 
 function getIwiStoryByStoryId(id) {
   return db('story')
-  .where('story.id', id)
+    .where('story.id', id)
 }
 
 function postStory(post) {
-    return db('story').insert(post)
-      .then(result => db('story').where({id: result[0]}))
-    
-   
-  }
+  return db('story').insert(post)
+    .then(result => db('story').where({ id: result[0] }))
+}
 
+function editStory(post) {
+  return db('story').update(post).where('story.id', post.id)
+}
 
-// function getUsers() {
-//   return db('users').select();
-// }
+function deleteStory(id) {
+  return db('story').delete().where('story.id', id)
+}
+
 
 module.exports = {
   getIwiStoriesByIwi,
   getIwiStoryByStoryId,
-  postStory
+  postStory,
+  editStory,
+  deleteStory
 };

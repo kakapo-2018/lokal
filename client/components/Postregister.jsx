@@ -13,27 +13,18 @@ class About extends React.Component {
     return (
       <div className="container mainpage">
         <hr />
-        <h1>About</h1>
+        <h1>Kia ora rawa atu!</h1>
         <h4>
-          LOKAL is a local story telling app for Iwi to tell their stories about
-          their places.
+          Thank you for registering. A member of our team will be in touch
+          shortly to confirm your registration.
           <br />
           <br />
-          LOKAL works with Iwi to create walking tours of cities and allow
-          visitors to experience the depth of the local environment through
-          Maori eyes.
-          <br />
-          <br />
-          We hope you enjoy exploring. Ka kite!
         </h4>
-
         <button type="button" class="btn btn-block">
-          Contact us
+          Return to Journey
         </button>
-
-        <button type="button" class="btn btn-block">
-          Our Biliography
-        </button>
+        <br />
+        <br />
 
         <hr />
       </div>

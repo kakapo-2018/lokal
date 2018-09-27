@@ -30,7 +30,15 @@ img.header-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
+}
+
+img.Profile-image {
+  filter: grayscale(100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 a.links {
@@ -70,6 +78,12 @@ h2.Journey {
 }
 
 h3 {
+  color: white;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+}
+
+h3.contact-links {
   color: white;
   font-family: "Prompt", sans-serif;
   font-weight: 400;

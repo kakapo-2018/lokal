@@ -17,6 +17,8 @@ import Journeylist from "./Journeylist";
 import Experience from "./Experience";
 import Iwilanding from "./Iwilanding";
 import Viewstory from "./Viewstory";
+import Postregister from "./Postregister";
+import Contact from "./Contact";
 
 const App = ({ auth }) => (
   <Router>
@@ -37,6 +39,8 @@ const App = ({ auth }) => (
         <Route exact path="/Experience" component={Experience} />
         <Route exact path="/Iwilanding" component={Iwilanding} />
         <Route exact path="/Viewstory" component={Viewstory} />
+        <Route exact path="/Contact" component={Contact} />
+        <Route exact path="/Postregister" component={Postregister} />
         <Route exact path="/Bibliography" component={Bibliography} />
         <Route exact path="/register" component={(Login, Register)} />
         <Route exact path="/Journeylist" component={(Login, Journeylist)} />

@@ -29,6 +29,15 @@ class Register extends React.Component {
             <label>Confirm password</label>
             <input className="form-control" label="Password" />
 
+            <label>Name</label>
+            <input className="form-control" label="Password" />
+
+            <label>Address</label>
+            <input className="form-control" label="Password" />
+
+            <label>Phone number</label>
+            <input className="form-control" label="Password" />
+
             <div>
               <br />
               <br />

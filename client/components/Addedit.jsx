@@ -22,11 +22,34 @@ class Addedit extends React.Component {
               <label>Author</label>
               <input className="form-control" label="Email" />
               <label>Story</label>
-              <input className="form-control" label="Password" />
-              <label>Image upload</label>
-              <input className="form-control" label="Password" />
-              <label>Audio upload</label>
-              <input className="form-control" label="Password" />
+              <input className="form-control" label="Email" />
+
+              <br />
+              <label>Image</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Upload Image</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" />
+                  <label class="custom-file-label" for="inputGroupFile01">
+                    Choose Image
+                  </label>
+                </div>
+              </div>
+              <label>Audio</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Upload Audio</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" />
+                  <label class="custom-file-label" for="inputGroupFile01">
+                    Choose Audio
+                  </label>
+                </div>
+              </div>
+
               <button type="button" className="btn btn-primary btn-lg">
                 Submit
               </button>

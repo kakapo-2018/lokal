@@ -15,7 +15,7 @@ class Mapview extends React.Component {
         <hr />
         <h1>Insert map title</h1>
         <h5>
-          <img src="https://snazzy-maps-cdn.azureedge.net/assets/27-shift-worker.png?v=20170626083420" />
+          <div id="mapid"></div>
           <br />
           <br />
           Map caption

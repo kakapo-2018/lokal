@@ -27,7 +27,7 @@ const App = ({ auth }) => (
 
       <div className="container-mainpage">
         <Bodyheader />
-
+        <Mapview />
         <IwiList />
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />

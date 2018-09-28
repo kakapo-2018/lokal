@@ -26665,6 +26665,7 @@ var App = function App(_ref) {
         "div",
         { className: "container-mainpage" },
         _react2.default.createElement(_Bodyheader2.default, null),
+        _react2.default.createElement(_Mapview2.default, null),
         _react2.default.createElement(_IwiList2.default, null),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/Mapview", component: _Mapview2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/About", component: _About2.default }),
@@ -29351,7 +29352,7 @@ var Mapview = function (_React$Component) {
         _react2.default.createElement(
           "h5",
           null,
-          _react2.default.createElement("img", { src: "https://snazzy-maps-cdn.azureedge.net/assets/27-shift-worker.png?v=20170626083420" }),
+          _react2.default.createElement("div", { id: "mapid" }),
           _react2.default.createElement("br", null),
           _react2.default.createElement("br", null),
           "Map caption",

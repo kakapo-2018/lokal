@@ -19,6 +19,7 @@ import Iwilanding from "./Iwilanding";
 import Viewstory from "./Viewstory";
 import Postregister from "./Postregister";
 import Contact from "./Contact";
+import Mapcomp from "./Mapcomp"
 
 const App = ({ auth }) => (
   <Router>
@@ -27,7 +28,7 @@ const App = ({ auth }) => (
 
       <div className="container-mainpage">
         <Bodyheader />
-
+        <Mapcomp />
         <IwiList />
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />

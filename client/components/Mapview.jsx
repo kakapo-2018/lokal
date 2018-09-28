@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Mapcomp from "./Mapcomp";
 
 class Mapview extends React.Component {
   constructor(props) {
@@ -14,14 +15,16 @@ class Mapview extends React.Component {
       <div className="container mainpage">
         <hr />
         <h1>Insert map title</h1>
-        <h5>
-          <div id="mapid"></div>
+        
+          <div>
+            <Mapcomp />
+          </div>
           <br />
           <br />
           Map caption
           <br />
           <br />
-        </h5>
+        
 
         <hr />
       </div>

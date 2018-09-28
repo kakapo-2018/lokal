@@ -25,6 +25,7 @@
     "sqlite3": "^4.0.2"
   },
   "dependencies": {
+    "@turf/random": "^6.0.2",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -38,6 +39,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.2",
     "express-jwt": "^5.3.0",
+    "immutable": "^3.8.2",
     "jsdom": "^11.0.0",
     "jsonwebtoken": "^8.3.0",
     "jsx-loader": "^0.13.2",

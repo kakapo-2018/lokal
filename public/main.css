@@ -111,10 +111,13 @@ h5 {
 }
 
 #mapid {
-  height: 180px;
-  width: 600px;
-  height: 400px;
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  position: relative; 
   outline: none;
-  align-content: center;
-}
+  }

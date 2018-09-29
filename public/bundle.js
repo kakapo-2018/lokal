@@ -19035,6 +19035,10 @@ var _leaflet2 = _interopRequireDefault(_leaflet);
 
 var _reactLeaflet = __webpack_require__(185);
 
+var _RouterForwarder = __webpack_require__(329);
+
+var _RouterForwarder2 = _interopRequireDefault(_RouterForwarder);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19045,12 +19049,22 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-// var myIcon = Leaflet.icon({
+// var myIcon = L.icon({
 //   iconUrl: '../../public/images/icon.jpg',
 //   iconSize: [38, 95],
 //   iconAnchor: [22, 94],
 //   popupAnchor: [-10, -90]
 // });
+// L.marker([-41.30, 174.775], {icon: myIcon}).addTo(Map);
+
+// var latlngs = [
+//   [-41.30, 174.775],
+//   [-41.28, 174.78],
+//   [-41.29, 174.79]
+// ];
+// var polyline = L.polyline(latlngs, {color: 'red'}).addTo(Map);
+// // zoom the map to the polyline
+// map.fitBounds(polyline.getBounds());
 
 var MyPopupMarker = function MyPopupMarker(_ref) {
   var children = _ref.children,
@@ -19117,6 +19131,19 @@ var ReactLeafletMap = function (_PureComponent) {
           attribution: '&copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
           url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         }),
+        _react2.default.createElement(
+          _reactLeaflet.Popup,
+          null,
+          _react2.default.createElement(
+            _RouterForwarder2.default,
+            { context: this.context },
+            _react2.default.createElement(
+              Link,
+              { to: 'my destination' },
+              'Go to My Destination'
+            )
+          )
+        ),
         _react2.default.createElement(MyMarkersList, { markers: markers })
       );
     }
@@ -19124,6 +19151,10 @@ var ReactLeafletMap = function (_PureComponent) {
 
   return ReactLeafletMap;
 }(_react.PureComponent);
+
+MyComponent.contextTypes = {
+  router: PropTypes.object
+};
 
 exports.default = ReactLeafletMap;
 
@@ -43287,11 +43318,11 @@ var _Mapview = __webpack_require__(184);
 
 var _Mapview2 = _interopRequireDefault(_Mapview);
 
-var _Login = __webpack_require__(321);
+var _Login = __webpack_require__(322);
 
 var _Login2 = _interopRequireDefault(_Login);
 
-var _Addedit = __webpack_require__(322);
+var _Addedit = __webpack_require__(323);
 
 var _Addedit2 = _interopRequireDefault(_Addedit);
 
@@ -43299,23 +43330,23 @@ var _Journeylist = __webpack_require__(115);
 
 var _Journeylist2 = _interopRequireDefault(_Journeylist);
 
-var _Experience = __webpack_require__(323);
+var _Experience = __webpack_require__(324);
 
 var _Experience2 = _interopRequireDefault(_Experience);
 
-var _Iwilanding = __webpack_require__(324);
+var _Iwilanding = __webpack_require__(325);
 
 var _Iwilanding2 = _interopRequireDefault(_Iwilanding);
 
-var _Viewstory = __webpack_require__(325);
+var _Viewstory = __webpack_require__(326);
 
 var _Viewstory2 = _interopRequireDefault(_Viewstory);
 
-var _Postregister = __webpack_require__(326);
+var _Postregister = __webpack_require__(327);
 
 var _Postregister2 = _interopRequireDefault(_Postregister);
 
-var _Contact = __webpack_require__(327);
+var _Contact = __webpack_require__(328);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -52136,7 +52167,8 @@ var ZoomControl = function (_MapControl) {
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__context__["c" /* withLeaflet */])(ZoomControl));
 
 /***/ }),
-/* 321 */
+/* 321 */,
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52235,7 +52267,7 @@ var Login = function (_React$Component) {
 exports.default = Login;
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52396,7 +52428,7 @@ var Addedit = function (_React$Component) {
 exports.default = Addedit;
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52464,7 +52496,7 @@ var Experience = function (_React$Component) {
 exports.default = Experience;
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52553,7 +52585,7 @@ var Iwilanding = function (_React$Component) {
 exports.default = Iwilanding;
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52634,7 +52666,7 @@ var Viewstory = function (_React$Component) {
 exports.default = Viewstory;
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52715,7 +52747,7 @@ var About = function (_React$Component) {
 exports.default = About;
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52863,6 +52895,73 @@ var Contact = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Contact;
+
+/***/ }),
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RouterForwarder = function (_Component) {
+  _inherits(RouterForwarder, _Component);
+
+  function RouterForwarder() {
+    _classCallCheck(this, RouterForwarder);
+
+    return _possibleConstructorReturn(this, (RouterForwarder.__proto__ || Object.getPrototypeOf(RouterForwarder)).apply(this, arguments));
+  }
+
+  _createClass(RouterForwarder, [{
+    key: 'getChildContext',
+    value: function getChildContext() {
+      return this.props.context;
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'span',
+        null,
+        this.props.children
+      );
+    }
+  }]);
+
+  return RouterForwarder;
+}(_react.Component);
+
+RouterForwarder.childContextTypes = {
+  router: _propTypes2.default.object.isRequired
+};
+
+RouterForwarder.propTypes = {
+  context: _propTypes2.default.object.isRequired
+};
+
+exports.default = RouterForwarder;
 
 /***/ })
 /******/ ]);

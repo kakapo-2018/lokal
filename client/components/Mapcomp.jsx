@@ -1,14 +1,26 @@
 import React, { PureComponent } from 'react';
-import Leaflet from 'leaflet';
+import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer, GeoJSON } from 'react-leaflet';
+import RouterForwarder from './RouterForwarder';
 
 
-// var myIcon = Leaflet.icon({
+
+// var myIcon = L.icon({
 //   iconUrl: '../../public/images/icon.jpg',
 //   iconSize: [38, 95],
 //   iconAnchor: [22, 94],
 //   popupAnchor: [-10, -90]
 // });
+// L.marker([-41.30, 174.775], {icon: myIcon}).addTo(Map);
+
+// var latlngs = [
+//   [-41.30, 174.775],
+//   [-41.28, 174.78],
+//   [-41.29, 174.79]
+// ];
+// var polyline = L.polyline(latlngs, {color: 'red'}).addTo(Map);
+// // zoom the map to the polyline
+// map.fitBounds(polyline.getBounds());
 
 const MyPopupMarker = ({ children, position }) => (
   <Marker position={position}>
@@ -30,6 +42,7 @@ class ReactLeafletMap extends PureComponent {
     zoom: 11,
   }
 
+  
   render() {
       const center = [this.state.lat, this.state.lng]
   
@@ -46,6 +59,12 @@ class ReactLeafletMap extends PureComponent {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
+        <Popup>
+          <RouterForwarder context={this.context}>
+            <Link to={'my destination'}>Go to My Destination</Link>
+          </RouterForwarder>
+        </Popup>
+
         <MyMarkersList markers={markers} />
 
         {/* <Marker position={position} icon={myIcon}>
@@ -56,6 +75,10 @@ class ReactLeafletMap extends PureComponent {
       </Map>
     )
   }
+}
+
+MyComponent.contextTypes = {
+  router: PropTypes.object,
 }
 
 export default ReactLeafletMap;

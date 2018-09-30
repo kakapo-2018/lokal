@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Mapcomp from "./Mapcomp";
-import Viewstory from "./Viewstory";
+import Journeylist from "./Journeylist";
 
 class Mapview extends React.Component {
   constructor(props) {
@@ -15,14 +15,9 @@ class Mapview extends React.Component {
     return (
       <div className="container mainpage">
         <hr />
-        <h1>Insert map title</h1>
-        
-          <div>
-            <Mapcomp />
-          </div>
           <br />
           <br />
-         <Viewstory />
+         <Journeylist />
           <br />
           <br />
         

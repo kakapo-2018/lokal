@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
 import iwiData from './users'
 import iwiStories from './story'
-import auth from './auth'
+import iwiInfo from './iwiInfo'
 
 export default combineReducers({
-   auth,
    iwiData,
-   iwiStories
+   iwiStories,
+   iwiInfo
 })

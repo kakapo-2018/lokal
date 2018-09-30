@@ -40,3 +40,24 @@ export function getStories() {
       })
   }
 }
+
+export const getIwiInfo = (info) => {
+  console.log(info)
+  return {
+    type: "IWI_INFO",
+    info: info 
+  }
+}
+
+export function getInfo() {
+  return (dispatch) => {
+    return request
+      .get('/api/iwiInfo/1')
+      .then(res => {
+        dispatch(getIwiInfo(res.body))
+      })
+      .catch(() => {
+        throw Error('Your API route is broke, dumbass!')
+      })
+  }
+}

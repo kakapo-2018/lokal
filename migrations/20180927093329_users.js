@@ -8,6 +8,8 @@ exports.up = function(knex, Promise) {
     table.string('email')
     table.integer('phone')
     table.string('hash')
+    table.string('obj')
+    table.string('objBackGroundImg')
   })
 };
 

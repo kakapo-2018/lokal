@@ -20,20 +20,20 @@ export function getIwis() {
   }
 }
 
-export const iwiStories = (story) => {
+export const getIwiStories = (story) => {
   return {
     type: "IWI_STORIES",
-    iwi_stories: story 
+    story: story 
   }
 }
 
 export function getStories() {
-  const iwi_id = req.params.id;
+  // const iwi_id = req.params.id;
   return (dispatch) => {
     return request
       .get('/api/story/iwi/1')
       .then(res => {
-        dispatch(iwiStories(res.body))
+        dispatch(getIwiStories(res.body))
       })
       .catch(() => {
         throw Error('Your API route is broke, dumbass!')

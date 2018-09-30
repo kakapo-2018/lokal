@@ -48,12 +48,36 @@ export const getIwiInfo = (info) => {
   }
 }
 
-export function getInfo() {
+export function getInfo(id) {
+  return (dispatch) => {
+    console.log(id)
+    return request
+      .get(`/api/iwiInfo/${id}`)
+      .then(res => {
+        console.log(res.body)
+        dispatch(getIwiInfo(res.body))
+      })
+      .catch(() => {
+        throw Error('Your API route is broke, dumbass!')
+      })
+  }
+}
+
+export const getIwiStory = (story) => {
+  return {
+    type: "IWI_STORY",
+    story: story 
+  }
+}
+
+export function getStory(id) {
+  
   return (dispatch) => {
     return request
-      .get('/api/iwiInfo/1')
+      .get(`/api/story/${id}`)
       .then(res => {
-        dispatch(getIwiInfo(res.body))
+        console.log(res.body)
+        dispatch(getIwiStory(res.body))
       })
       .catch(() => {
         throw Error('Your API route is broke, dumbass!')

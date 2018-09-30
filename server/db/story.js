@@ -11,6 +11,7 @@ function getIwiStoryByStoryId(id) {
   return db('story')
     .where('story.id', id)
     .select('title', 'content', 'image')
+    .first()
 }
 
 function postStory(post) {

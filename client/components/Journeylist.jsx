@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import {getStories} from '../actions/index'
+import {getStories, getStory} from '../actions/index'
 
 class Journeylist extends React.Component {
   constructor(props) {
@@ -9,9 +9,7 @@ class Journeylist extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    this.props.dispatch(getStories())
-  }
+  componentDidMount() {}
 
   render() {
     const { auth, logout, iwiStories } = this.props;
@@ -25,12 +23,14 @@ class Journeylist extends React.Component {
           <h2 className="Journey">Journeys</h2>
           {iwiStories.map(story => {
             return (
-              <button key={story.title} type="button" class="btn btn-block">
+              <button onClick={() => this.props.dispatch 
+              (getStory(story.id))} 
+              key={story.title} type="button" class="btn btn-block">
                 {story.title}
               </button>
             )
           })}
-         
+         {this.props.iwiStory && this.props.iwiStory.content}
         </div>
         <hr />
       </div>
@@ -41,6 +41,7 @@ class Journeylist extends React.Component {
 function mapStateToProps(state) {
   return {
     iwiStories: state.iwiStories,
+    iwiStory: state.iwiStory
   }
 }
 

@@ -61,13 +61,15 @@ class ReactLeafletMap extends React.Component {
 
       const center = [this.state.lat, this.state.lng]
 
+      const initial = {lat: -41.2864, lng: 174.7842, zoom: 11,}
+
       const welly = [{ key: 'Wellington', position: [-41.30, 174.775], children: 'Kia Ora'}]
 
       const markers = this.props.iwiStories.map(story => {
         return {
           key: story.title,
           position: [story.latitude, story.longitude],
-          children: story.content
+          children: story.title
         }
       })
       
@@ -75,7 +77,6 @@ class ReactLeafletMap extends React.Component {
       //  { key: 'name', position: [-41.30, 174.775], children: 'INFO' },
       // ]
 
-      
 
 
     return (

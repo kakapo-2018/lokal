@@ -9,19 +9,25 @@ class Experience extends Component {
     //ADD SCENE
     this.scene = new THREE.Scene();
 
+    this.scene.background = new THREE.TextureLoader().load(
+      "https://cdn.stevejansen.photography/assets/uploads/2017/02/View-across-Wellington-Harbour.jpg"
+    );
+    this.scene.backgroundSphere = true;
+
+    //ADD RENDERER
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    this.renderer.setClearColor("#000000");
+    this.renderer.setSize(width, height);
+    this.mount.appendChild(this.renderer.domElement);
+
     //ADD CAMERA
     this.camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 2000);
 
-    this.camera.position.z = -20;
+    this.camera.position.z = -25;
     this.camera.position.y = 0;
     this.camera.position.x = 0;
     var point = new THREE.Vector3(0, 0, 0);
     this.camera.lookAt(point);
-    //ADD RENDERER
-    this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setClearColor("#000000");
-    this.renderer.setSize(width, height);
-    this.mount.appendChild(this.renderer.domElement);
 
     //ADD LIGHTING
     var light = new THREE.PointLight(0xeb5605, 1, 100);
@@ -92,7 +98,7 @@ class Experience extends Component {
           <h1>Experience</h1>
 
           <div
-            style={{ width: "700px", height: "700px" }}
+            style={{ width: "100%", height: "500px" }}
             ref={mount => {
               this.mount = mount;
             }}

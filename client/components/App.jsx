@@ -28,8 +28,8 @@ const App = ({ auth }) => (
 
       <div className="container-mainpage">
         <Bodyheader />
-        <Mapcomp />
-        <IwiList />
+        <Mapview />
+        
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />
         <Route exact path="/login" component={Login} />

@@ -33,7 +33,6 @@ export function getStories(id) {
     return request
       .get(`/api/story/iwi/${id}`)
       .then(res => {
-        console.log(res.body)
         dispatch(getIwiStories(res.body))
       })
       .catch(() => {
@@ -43,7 +42,6 @@ export function getStories(id) {
 }
 
 export const getIwiInfo = (info) => {
-  console.log(info)
   return {
     type: "IWI_INFO",
     info: info 

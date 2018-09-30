@@ -18,7 +18,6 @@ class Mapview extends React.Component {
           <br />
           <br />
           <Mapcomp />
-          <Journeylist />
           <br />
           <br />
         

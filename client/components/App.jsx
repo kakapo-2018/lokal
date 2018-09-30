@@ -27,16 +27,11 @@ const App = () => (
 
       <div className="container-mainpage">
         <Bodyheader />
-<<<<<<< HEAD
         <Mapview />
-        
-=======
-        <Mapcomp />
         <IwiList />
         <Iwilanding />
         <Viewstory />
         <Journeylist />
->>>>>>> 5989cf21cf1645fdf03802159020144d7d1460a2
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Header" component={Header} />

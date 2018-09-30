@@ -32,7 +32,7 @@ class IwiList extends React.Component {
             return (
               <button onClick={() => this.props.dispatch(getStories(iwi.id))} key={iwi.iwi_name} type="button" class="btn btn-block">
                 {iwi.iwi_name}
-                {console.log(iwi.id)}
+                
               </button>
             )
           })}

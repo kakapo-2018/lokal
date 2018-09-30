@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import {getStories} from '../actions/index'
 
 class Journeylist extends React.Component {
   constructor(props) {
@@ -8,17 +9,27 @@ class Journeylist extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    this.props.dispatch(getStories())
+  }
+
   render() {
-    const { auth, logout } = this.props;
+    const { auth, logout, iwiStories } = this.props;
     return (
       <div className="container journey-container">
         <hr />
 
         <h3>Here are Te Ati Awa's Journeys</h3>
-
+        
         <div class="jumbotron">
           <h2 className="Journey">Journeys</h2>
-
+          {iwiStories.map(story => {
+            return (
+              <button key={story.title} type="button" class="btn btn-block">
+                {story.title}
+              </button>
+            )
+          })}
           <button type="button" class="btn btn-block">
             Tangi-te keo and Whataitai
           </button>
@@ -35,4 +46,10 @@ class Journeylist extends React.Component {
   }
 }
 
-export default Journeylist;
+function mapStateToProps(state) {
+  return {
+    iwiStories: state.iwiStories,
+  }
+}
+
+export default connect(mapStateToProps)(Journeylist)

@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { getIwis } from "../actions/index";
+import { getIwis, getStories } from "../actions/index";
 
 class IwiList extends React.Component {
   constructor(props) {
@@ -30,8 +30,9 @@ class IwiList extends React.Component {
 
           {iwiData.map(iwi => {
             return (
-              <button key={iwi.iwi_name} type="button" class="btn btn-block">
+              <button onClick={()=> getStories(iwi.id)} key={iwi.iwi_name} type="button" class="btn btn-block">
                 {iwi.iwi_name}
+                {console.log(iwi.id)}
               </button>
             )
           })}

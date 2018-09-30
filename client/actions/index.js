@@ -27,12 +27,13 @@ export const getIwiStories = (story) => {
   }
 }
 
-export function getStories() {
-  // const iwi_id = req.params.id;
+export function getStories(id) {
+  
   return (dispatch) => {
     return request
-      .get('/api/story/iwi/1')
+      .get(`/api/story/iwi/${id}`)
       .then(res => {
+        console.log(res.body)
         dispatch(getIwiStories(res.body))
       })
       .catch(() => {

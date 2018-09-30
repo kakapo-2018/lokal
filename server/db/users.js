@@ -38,7 +38,7 @@ function getUserByID(user_id) {
 }
 
 function getIwi() {
-  return db('users').select('iwi_name', 'location');
+  return db('users').select('id','iwi_name', 'location');
 }
 
 module.exports = {

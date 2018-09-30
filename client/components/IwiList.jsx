@@ -30,7 +30,7 @@ class IwiList extends React.Component {
 
           {iwiData.map(iwi => {
             return (
-              <button onClick={()=> getStories(iwi.id)} key={iwi.iwi_name} type="button" class="btn btn-block">
+              <button onClick={() => this.props.dispatch(getStories(iwi.id))} key={iwi.iwi_name} type="button" class="btn btn-block">
                 {iwi.iwi_name}
                 {console.log(iwi.id)}
               </button>

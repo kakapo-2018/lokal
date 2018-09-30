@@ -19071,6 +19071,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
+// Code in progress - to change map marker icon
 // var myIcon = L.icon({
 //   iconUrl: '../../public/images/icon.jpg',
 //   iconSize: [38, 95],
@@ -19079,6 +19080,7 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 // });
 // L.marker([-41.30, 174.775], {icon: myIcon}).addTo(Map);
 
+// code in progress - to make a line between markers on map
 // var latlngs = [
 //   [-41.30, 174.775],
 //   [-41.28, 174.78],
@@ -19138,13 +19140,17 @@ var ReactLeafletMap = function (_PureComponent) {
       zoom: 11
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
+  //this sets where the map loads + zoom level
+
 
   _createClass(ReactLeafletMap, [{
     key: 'render',
     value: function render() {
       var center = [this.state.lat, this.state.lng];
 
-      var markers = [{ key: 'marker1', position: [-41.30, 174.775], children: 'My first popup' }, { key: 'marker2', position: [-41.28, 174.78], children: 'My second popup' }, { key: 'marker3', position: [-41.29, 174.79], children: 'My third popup' }];
+      var welly = [{ key: 'Wellington', position: [-41.2864, 174.7842], children: 'Kia Ora' }];
+
+      var markers = [{ key: 'NAME', position: [-41.30, 174.775], children: 'INFO' }];
 
       return _react2.default.createElement(
         _reactLeaflet.Map,
@@ -19153,30 +19159,13 @@ var ReactLeafletMap = function (_PureComponent) {
           attribution: '&copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
           url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
         }),
-        _react2.default.createElement(
-          _reactLeaflet.Popup,
-          null,
-          _react2.default.createElement(
-            _RouterForwarder2.default,
-            { context: this.context },
-            _react2.default.createElement(
-              Link,
-              { to: 'my destination' },
-              'Go to My Destination'
-            )
-          )
-        ),
-        _react2.default.createElement(MyMarkersList, { markers: markers })
+        _react2.default.createElement(MyMarkersList, { markers: welly })
       );
     }
   }]);
 
   return ReactLeafletMap;
 }(_react.PureComponent);
-
-MyComponent.contextTypes = {
-  router: PropTypes.object
-};
 
 exports.default = ReactLeafletMap;
 

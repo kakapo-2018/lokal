@@ -9,9 +9,7 @@ class Viewstory extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    this.props.dispatch(getInfo())
-  }
+  componentDidMount() {}
 
   render() {
 

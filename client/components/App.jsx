@@ -17,8 +17,9 @@ import Viewstory from "./Viewstory";
 import Postregister from "./Postregister";
 import Contact from "./Contact";
 import Mapcomp from "./Mapcomp"
+import { runInThisContext } from "vm";
 
-const App = () => (
+const App = (props) => (
 
   
   <Router>
@@ -29,9 +30,10 @@ const App = () => (
         <Bodyheader />
         <Mapview />
         <IwiList />
-        <Iwilanding />
-        <Viewstory />
-        <Journeylist />
+    
+        {/* <Iwilanding />
+        <Viewstory /> */}
+        {/* <Journeylist /> */}
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Header" component={Header} />
@@ -49,9 +51,9 @@ const App = () => (
   </Router>
 );
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
   return {
-   
+
   };
 };
 

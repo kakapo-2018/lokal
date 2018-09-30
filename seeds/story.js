@@ -75,16 +75,8 @@ exports.seed = function (knex, Promise) {
           longitude: '174.777425',
           content: "From here one can see most of Wellington Harbour. Legend has it that two taniwha lived in the harbour (which at that time was an enclosed lake). One was a restless, energetic taniwha named Ngake, who longed to escape its confinements and swim to open sea. It sped about in the north east corner of the harbour, using its tail to build up the shallow area (Waiwhetu), and then hurled itself at the rocks encircling the lake, and smashed through to escape to the freedom of Raukawa moana (Cook Strait). The other taniwha, Whātaitai, decided to make his escape through another exit. Pushing off with its tail, and in doing so forming the Ngauranga gorge, Whātaitai headed off down the other side of the island of Motu Kairanga (Miramar Peninsula) only to get stuck by the receding tide Ngake had let in. Whataitai's body thus forms the isthmus between the former island of Motu Kairanga and the western side of the harbour, where the airport is now situated. It is believed Tangi-te-keo, (Mt Victoria) was named after the soul of Whātaitai, which, after leaving the taniwha's body, flew up to the top of this hill in the shape of a bird and proceeded to tangi (weep and mourn). From this spot one can also see Matiu (Somes) Island and Makaro (Ward) Island. Named by Kupe, Matiu and Makaro were always regarded as a place of refuge. However, their lack of water supply meant they were never occupied on a long term basis, and no structures were erected on these islands. Follow the road down Mt Victoria to Oriental Parade and turn right. Follow the coast road round to Pt Halswell. While driving around Oriental Parade one can see Rukutoa, Point Halswell and the Miramar Peninsula to the left. ",
           image: ''
-        },
-        {
-          id: 10,
-          iwi_id: 1,
-          title: 'Rukutoa',
-          latitude: '-41.291800',
-          longitude: '174.777425',
-          content: "Looking out to sea beyond the lighthouse is the area known as Rukutoa. This has always been an important fishing ground and shellfish gathering area for inner harbour tribes. Rukutoa, named because only the most skilled divers were capāble of obtaining shellfish, is notorious for its strong currents and rough waters. Many lives have been lost in divers' quests for seafood at this site.Continue around the coats and stop at the carpark on the right just past the point.",
-          image: ''
         }
+      
       ]);
     });
 };

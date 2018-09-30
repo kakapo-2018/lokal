@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer, GeoJSON } from 'react-leaflet';
 import RouterForwarder from './RouterForwarder';
+// import {JourneyList} from './Journeylist'
+// import {getStories} from '../actions/index'
 
 
 // Code in progress - to change map marker icon
@@ -36,6 +38,8 @@ const MyMarkersList = ({ markers }) => {
   return <div style={{ display: 'none' }}>{items}</div>
 }
 
+
+
 class ReactLeafletMap extends PureComponent {
   //this sets where the map loads + zoom level
   state = {
@@ -43,6 +47,8 @@ class ReactLeafletMap extends PureComponent {
     lng: 174.7842,
     zoom: 11,
   }
+
+  
 
   
   render() {
@@ -54,6 +60,7 @@ class ReactLeafletMap extends PureComponent {
         { key: 'NAME', position: [-41.30, 174.775], children: 'INFO' },
       ]
 
+
     return (
       <Map id="mapid" center={center} zoom={this.state.zoom}>
         {/* Title layer obligatory with openstreetmaps */}
@@ -62,7 +69,7 @@ class ReactLeafletMap extends PureComponent {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-          <MyMarkersList markers={welly} />
+          <MyMarkersList markers={markers}/>
 
         {/* code in progress - link in popup
         <Popup>

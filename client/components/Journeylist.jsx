@@ -30,15 +30,7 @@ class Journeylist extends React.Component {
               </button>
             )
           })}
-          <button type="button" class="btn btn-block">
-            Tangi-te keo and Whataitai
-          </button>
-          <button type="button" class="btn btn-block">
-            Te Aro Pa
-          </button>
-          <button type="button" class="btn btn-block">
-            Add a story
-          </button>
+         
         </div>
         <hr />
       </div>

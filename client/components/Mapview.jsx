@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Mapcomp from "./Mapcomp";
+import Viewstory from "./Viewstory";
 
 class Mapview extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Mapview extends React.Component {
           </div>
           <br />
           <br />
-          Map caption
+         <Viewstory />
           <br />
           <br />
         

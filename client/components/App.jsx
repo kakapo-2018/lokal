@@ -19,6 +19,8 @@ import Contact from "./Contact";
 import Mapcomp from "./Mapcomp"
 
 const App = () => (
+
+  
   <Router>
     <div>
       <Header />
@@ -28,6 +30,7 @@ const App = () => (
         <Mapcomp />
         <IwiList />
         <Iwilanding />
+        <Viewstory />
         <Journeylist />
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />

@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
+import { connect } from "react-redux";
 import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer, GeoJSON } from 'react-leaflet';
 import RouterForwarder from './RouterForwarder';
 // import {JourneyList} from './Journeylist'
-// import {getStories} from '../actions/index'
+import {getStories} from '../actions/index'
 
 
 // Code in progress - to change map marker icon
@@ -40,28 +41,45 @@ const MyMarkersList = ({ markers }) => {
 
 
 
-class ReactLeafletMap extends PureComponent {
-  //this sets where the map loads + zoom level
-  state = {
-    lat: -41.2864,
-    lng: 174.7842,
-    zoom: 11,
+class ReactLeafletMap extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lat: -41.2864,
+      lng: 174.7842,
+      zoom: 11,
+    };
   }
-
-  
+ 
+  componentDidMount() {
+    this.props.dispatch(getStories())
+  } 
 
   
   render() {
+      const iwiStories = this.props;
+
       const center = [this.state.lat, this.state.lng]
 
-      const welly = [{ key: 'Wellington', position: [-41.2864, 174.7842], children: 'Kia Ora'}]
+      const welly = [{ key: 'Wellington', position: [-41.30, 174.775], children: 'Kia Ora'}]
 
-      const markers = [
-        { key: 'NAME', position: [-41.30, 174.775], children: 'INFO' },
-      ]
+      const markers = this.props.iwiStories.map(story => {
+        return {
+          key: story.title,
+          position: [story.latitude, story.longitude],
+          children: story.content
+        }
+      })
+      
+      // [
+      //  { key: 'name', position: [-41.30, 174.775], children: 'INFO' },
+      // ]
+
+      
 
 
     return (
+      <div>
       <Map id="mapid" center={center} zoom={this.state.zoom}>
         {/* Title layer obligatory with openstreetmaps */}
         <TileLayer
@@ -86,9 +104,15 @@ class ReactLeafletMap extends PureComponent {
           </Popup>
         </Marker> */}
       </Map>
+      </div>
     )
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    iwiStories: state.iwiStories,
+  }
+}
 
-export default ReactLeafletMap;
+export default connect(mapStateToProps) (ReactLeafletMap);

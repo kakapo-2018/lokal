@@ -27,7 +27,7 @@ const App = () => (
 
       <div className="container-mainpage">
         <Bodyheader />
-        <Mapcomp />
+        <Mapview />
         <IwiList />
         <Iwilanding />
         <Viewstory />

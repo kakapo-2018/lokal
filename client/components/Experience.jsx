@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import * as THREE from "three";
-import OBJLoader from "../../client/three/OBJLoader";
+import "../three/OBJLoader";
 
 class Experience extends Component {
   componentDidMount() {
@@ -10,11 +10,11 @@ class Experience extends Component {
     this.scene = new THREE.Scene();
 
     //ADD CAMERA
-    this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+    this.camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 2000);
 
-    this.camera.position.z = 3;
-    this.camera.position.y = 30;
-    this.camera.position.x = 30;
+    this.camera.position.z = -20;
+    this.camera.position.y = 0;
+    this.camera.position.x = 0;
     var point = new THREE.Vector3(0, 0, 0);
     this.camera.lookAt(point);
     //ADD RENDERER
@@ -35,27 +35,30 @@ class Experience extends Component {
 
     //ADD TANIWHA
     var loader = new THREE.OBJLoader();
+    const thisScene = this.scene;
 
-    loader.load("../../public/Taniwha.obj", function(testObject) {
-      scene.add(testObject);
+    loader.load("/Ngaketest.obj", function(testObject) {
+      thisScene.add(testObject);
       testObject.scale.x = 1;
       testObject.scale.y = 1;
       testObject.scale.z = 1;
       testObject.position.x = 0;
       testObject.position.y = 0;
       testObject.position.z = 0;
-      testObject.rotation.x = 0;
+      testObject.rotation.x = 90;
+      testObject.rotation.y = 0;
+      testObject.rotation.z = 0;
       var animate = function() {
         requestAnimationFrame(animate);
         testObject.rotation.x += 0;
         testObject.rotation.y += 0;
-        testObject.rotation.z += 0.0004;
+        testObject.rotation.z += 0.02;
       };
       animate();
     });
 
     //ADD CUBE
-    const geometry = new THREE.BoxGeometry(7, 29, 22);
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
     const material = new THREE.MeshBasicMaterial({ color: "#952e46" });
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);

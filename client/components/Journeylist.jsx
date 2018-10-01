@@ -30,7 +30,14 @@ class Journeylist extends React.Component {
               </button>
             )
           })}
-         {this.props.iwiStory && this.props.iwiStory.content}
+         {this.props.iwiStory && (
+           <div>
+             <br />
+           <h4>{this.props.iwiStory.title}</h4>
+           <p>{this.props.iwiStory.content}</p>
+           <img src={`${this.props.iwiStory.image}`}></img>
+           </div>
+         )}
         </div>
         <hr />
       </div>

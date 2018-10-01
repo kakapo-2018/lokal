@@ -18,6 +18,7 @@ import Postregister from "./Postregister";
 import Contact from "./Contact";
 import Mapcomp from "./Mapcomp"
 import { runInThisContext } from "vm";
+import IwiListView from './IwiListView'
 
 const App = (props) => (
 
@@ -27,13 +28,14 @@ const App = (props) => (
       <Header />
 
       <div className="container-mainpage">
-        <Bodyheader />
-        <Mapview />
-        <IwiList />
-    
+         
         {/* <Iwilanding />
         <Viewstory /> */}
         {/* <Journeylist /> */}
+        <Route exact path="/" component={Bodyheader} />
+        <Route exact path="/" component={Mapview} />
+        <Route exact path="/" component={IwiList} />
+        <Route exact path="/iwi" component={IwiListView} />
         <Route exact path="/Mapview" component={Mapview} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Header" component={Header} />

@@ -12,7 +12,7 @@ class Bodyheader extends React.Component {
     const { auth, logout } = this.props;
     return (
       <div className="container title">
-        <img src="titlelarge.svg" className="header-small" />
+        <a href='/'><img src="titlelarge.svg" className="header-small"/></a>
       </div>
     );
   }

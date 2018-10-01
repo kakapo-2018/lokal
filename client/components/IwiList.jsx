@@ -10,6 +10,7 @@ import {
 } from "../actions/index";
 import Viewstory from "./Viewstory";
 
+
 class IwiList extends React.Component {
   constructor(props) {
     super(props);

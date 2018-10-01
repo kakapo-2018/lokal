@@ -69,6 +69,7 @@ export const getIwiStory = story => {
 
 export function getStory(id) {
   return dispatch => {
+    dispatch({ type: "RESET_STORY" });
     return request
       .get(`/api/story/${id}`)
       .then(res => {

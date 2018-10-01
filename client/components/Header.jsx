@@ -1,6 +1,6 @@
 import React from "react";
 // import { connect } from "react-redux";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   constructor(props) {
@@ -16,15 +16,15 @@ class Header extends React.Component {
           <a class="header-text" href="#">
             <img className="logo" src="logowhite.svg" />
           </a>
-          <a class="header-text" href="./about">
+          <Link class="header-text" to="/login">
             login
-          </a>
-          <a class="header-text" href="#">
+          </Link>
+          <Link class="header-text" to="/register">
             register
-          </a>
-          <a class="header-text" href="#">
+          </Link>
+          <Link class="header-text" to="/about">
             about
-          </a>
+          </Link>
         </div>
       </div>
     );

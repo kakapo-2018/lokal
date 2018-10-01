@@ -1,10 +1,14 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { getInfo, getIwis, getStories, clearState } from "../actions/index";
-import Viewstory from './Viewstory'
-
-
+import {
+  getInfo,
+  getIwis,
+  getStories,
+  clearState,
+  getStory
+} from "../actions/index";
+import Viewstory from "./Viewstory";
 
 class IwiList extends React.Component {
   constructor(props) {
@@ -13,15 +17,12 @@ class IwiList extends React.Component {
   }
 
   componentDidMount() {
-    this.props.dispatch(getIwis())
-    this.props.dispatch(clearState())
-}
-
-
+    this.props.dispatch(getIwis());
+    this.props.dispatch(clearState());
+  }
 
   render() {
-
-    const { auth, logout, iwiData, iwiInfo } = this.props;
+    const { auth, logout, iwiData, iwiInfo, iwiStory } = this.props;
     return (
       <div className="container journey-container">
         <hr />
@@ -34,15 +35,19 @@ class IwiList extends React.Component {
 
           {iwiData.map(iwi => {
             return (
-              <button onClick={() => { 
-                this.props.dispatch(getStories(iwi.id))
-                this.props.dispatch(getInfo(iwi.id))
-                this.props.history.push('/iwi')
-                }} key={iwi.iwi_name} type="button" class="btn btn-block">
+              <button
+                onClick={() => {
+                  this.props.dispatch(getStories(iwi.id));
+                  this.props.dispatch(getInfo(iwi.id));
+                  this.props.history.push("/iwi");
+                }}
+                key={iwi.iwi_name}
+                type="button"
+                class="btn btn-block"
+              >
                 {iwi.iwi_name}
-                
               </button>
-            )
+            );
           })}
 
           {/* 
@@ -57,9 +62,11 @@ class IwiList extends React.Component {
 
 function mapStateToProps(state) {
   return {
+    iwiStories: state.iwiStories,
+    iwiStory: state.iwiStory,
     iwiData: state.iwiData,
     iwiInfo: state.iwiInfo
-  }
+  };
 }
 
 export default connect(mapStateToProps)(IwiList);

@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer, GeoJSON } from 'react-leaflet';
 import RouterForwarder from './RouterForwarder';
-// import {JourneyList} from './Journeylist'
 import {getStories} from '../actions/index'
 
 
@@ -33,6 +32,7 @@ const MyPopupMarker = ({ children, position }) => (
 )
 
 const MyMarkersList = ({ markers }) => {
+  console.log(markers)
   const items = markers.map(({ key, ...props }) => (
     <MyPopupMarker key={key} {...props} />
   ))
@@ -61,7 +61,7 @@ class ReactLeafletMap extends React.Component {
 
       const center = [this.state.lat, this.state.lng]
 
-      const initial = {lat: -41.2864, lng: 174.7842, zoom: 11,}
+      //const initial = {lat: -41.2864, lng: 174.7842, zoom: 11,}
 
       const welly = [{ key: 'Wellington', position: [-41.30, 174.775], children: 'Kia Ora'}]
 
@@ -77,9 +77,10 @@ class ReactLeafletMap extends React.Component {
       //  { key: 'name', position: [-41.30, 174.775], children: 'INFO' },
       // ]
 
-
+    
 
     return (
+      
       <div>
       <Map id="mapid" center={center} zoom={this.state.zoom}>
         {/* Title layer obligatory with openstreetmaps */}

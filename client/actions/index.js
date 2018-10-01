@@ -50,11 +50,11 @@ export const getIwiInfo = (info) => {
 
 export function getInfo(id) {
   return (dispatch) => {
-    console.log(id)
+    
     return request
       .get(`/api/iwiInfo/${id}`)
       .then(res => {
-        console.log(res.body)
+        
         dispatch(getIwiInfo(res.body))
       })
       .catch(() => {

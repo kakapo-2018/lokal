@@ -3,6 +3,7 @@ import * as THREE from "three";
 import "../three/OBJLoader";
 import { getStory } from "../actions/index";
 import { connect } from "react-redux";
+import { log } from "core-js";
 
 class Experience extends Component {
   constructor(props) {
@@ -13,11 +14,23 @@ class Experience extends Component {
   }
 
   componentDidMount() {
+    this.renderModel();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.iwiStory.image != nextProps.iwiStory.image) {
+      this.removeAnimation();
+      this.renderModel();
+    }
+  }
+
+  renderModel() {
     const width = this.mount.clientWidth;
     const height = this.mount.clientHeight;
     const { iwiStory } = this.props;
     let image = iwiStory.objBackGroundImg;
     let obj = iwiStory.obj;
+    console.log("mountt", this.mount, this.renderer);
     //ADD SCENE
 
     this.scene = new THREE.Scene();
@@ -79,9 +92,13 @@ class Experience extends Component {
     const material = new THREE.MeshBasicMaterial({ color: "#952e46" });
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);
+    console.log(this.scene);
     this.start();
   }
   componentWillUnmount() {
+    this.removeAnimation();
+  }
+  removeAnimation() {
     this.stop();
     this.mount.removeChild(this.renderer.domElement);
   }
@@ -96,6 +113,7 @@ class Experience extends Component {
   animate = () => {
     this.cube.rotation.y += 0.01;
     this.renderScene();
+    cancelAnimationFrame;
     this.frameId = window.requestAnimationFrame(this.animate);
   };
   renderScene = () => {
@@ -123,7 +141,7 @@ class Experience extends Component {
 
 function mapStateToProps(state) {
   return {
-    iwiStory: iwiStory
+    iwiStory: state.iwiStory
   };
 }
 

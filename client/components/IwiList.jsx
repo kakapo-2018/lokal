@@ -1,8 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { getInfo, getIwis, getStories } from "../actions/index";
+import { getInfo, getIwis, getStories, clearState } from "../actions/index";
 import Viewstory from './Viewstory'
+
+
 
 class IwiList extends React.Component {
   constructor(props) {
@@ -12,6 +14,7 @@ class IwiList extends React.Component {
 
   componentDidMount() {
     this.props.dispatch(getIwis())
+    this.props.dispatch(clearState())
 }
 
 
@@ -27,14 +30,15 @@ class IwiList extends React.Component {
 
         <hr />
         <div class="jumbotron">
-          <h2 className="Journey"><Link to="/iwi">Journey</Link></h2>
+          <h2 className="Journey">Journey</h2>
 
           {iwiData.map(iwi => {
             return (
               <button onClick={() => { 
                 this.props.dispatch(getStories(iwi.id))
                 this.props.dispatch(getInfo(iwi.id))
-              }} key={iwi.iwi_name} type="button" class="btn btn-block">
+                this.props.history.push('/iwi')
+                }} key={iwi.iwi_name} type="button" class="btn btn-block">
                 {iwi.iwi_name}
                 
               </button>

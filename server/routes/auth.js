@@ -6,14 +6,18 @@ var token = require('../auth/token');
 router.post('/register', register, token.issue);
 
 function register(req, res, next) {
-  const { email, password } = req.body;
+  const { iwi_name, email, password, location, contact_name, phone  } = req.body;
 
   userExists(email, req.app.get('db'))
     .then(exists => {
       if (exists) return res.status(400).send({ message: 'User Name Taken' });
       createUser(
+        iwi_name,
         email,
         password,
+        location,
+        contact_name,
+        phone,
         req.app.get('db')
       )
         .then(() => next())

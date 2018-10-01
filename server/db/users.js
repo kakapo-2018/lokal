@@ -2,13 +2,13 @@ var hash = require('../auth/hash');
 
 const db = require('./connection');
 
-function createUser(email, password) {
+function createUser(email, password,iwi_name , contact_name, location, phone_number) {
   return new Promise((resolve, reject) => {
     hash.generate(password, (err, hash) => {
       if (err) reject(err);
 
       db('users')
-        .insert({ email, hash })
+        .insert({iwi_name, email, contact_name, location, phone_number, hash })
         .then(user_id => resolve(user_id))
         .catch(err => reject(err));
     });

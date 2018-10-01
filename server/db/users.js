@@ -1,34 +1,41 @@
-var hash = require('../auth/hash');
+var hash = require("../auth/hash");
 
-const db = require('./connection');
+const db = require("./connection");
 
-function createUser(user_name, password) {
+function createUser(iwi_name, email, password, contact_name, location, phone) {
   return new Promise((resolve, reject) => {
     hash.generate(password, (err, hash) => {
       if (err) reject(err);
 
-      db('users')
-        .insert({ user_name, hash })
+      return db("users")
+        .insert({
+          iwi_name,
+          email,
+          hash,
+          contact_name,
+          location,
+          phone
+        })
         .then(user_id => resolve(user_id))
         .catch(err => reject(err));
     });
   });
 }
-function userExists(user_name) {
-  return db('users')
-    .where('user_name', user_name)
+function userExists(email) {
+  return db("users")
+    .where("email", email)
     .first();
 }
 
-function getUserByName(user_name) {
-  return db('users')
-    .where('user_name', user_name)
+function getUserByName(email) {
+  return db("users")
+    .where("email", email)
     .first();
 }
 
 function getUserByID(user_id) {
-  return db('users')
-    .where('id', user_id)
+  return db("users")
+    .where("id", user_id)
     .first()
     .then(userInfo => {
       delete userInfo.hash;
@@ -38,7 +45,7 @@ function getUserByID(user_id) {
 }
 
 function getIwi() {
-  return db('users').select('id','iwi_name', 'location');
+  return db("users").select();
 }
 
 module.exports = {

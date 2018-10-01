@@ -1,28 +1,38 @@
-var router = require('express').Router();
+var router = require("express").Router();
 
-var { userExists, createUser } = require('../db/users');
-var token = require('../auth/token');
+var { userExists, createUser } = require("../db/users");
+var token = require("../auth/token");
 
-router.post('/register', register, token.issue);
+router.post("/register", register, token.issue);
 
 function register(req, res, next) {
-  const { user_name, password } = req.body;
+  const {
+    iwi_name,
+    email,
+    password,
+    contact_name,
+    location,
+    phone_number
+  } = req.body;
 
-  userExists(user_name, req.app.get('db'))
-    .then(exists => {
-      if (exists) return res.status(400).send({ message: 'User Name Taken' });
-      createUser(
-        user_name,
-        password,
-        req.app.get('db')
-      )
-        .then(() => next())
-        .catch(err => res.status(500).send({ message: 'Server Error' }));
-    })
-    .catch(err => res.status(500).send({ message: 'Server Error' }));
+  // userExists(email, req.app.get("db"))
+  //   .then(exists => {
+  //     if (exists) return res.status(400).send({ message: "Email is in use" });
+  createUser(
+    iwi_name,
+    email,
+    password,
+    contact_name,
+    location,
+    phone_number
+    // req.app.get("db")
+  )
+    .then(() => next())
+    .catch(err => res.status(500).send({ message: "Server Error" }));
+  // })
+  // .catch(err => res.status(500).send({ message: "Server Error" }));
 }
 
-
-router.post('/login', token.issue);
+router.post("/login", token.issue);
 
 module.exports = router;

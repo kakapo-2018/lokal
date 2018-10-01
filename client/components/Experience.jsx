@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import * as THREE from "three";
 import "../three/OBJLoader";
-import { getStories } from "../actions/index";
+import { getStory } from "../actions/index";
 import { connect } from "react-redux";
 
 class Experience extends Component {
@@ -15,7 +15,7 @@ class Experience extends Component {
   componentDidMount() {
     const width = this.mount.clientWidth;
     const height = this.mount.clientHeight;
-    const { iwiStories } = this.props;
+    const { iwiStory } = this.props;
     let image = iwiStory.objBackGroundImg;
     let obj = iwiStory.obj;
     //ADD SCENE
@@ -103,7 +103,6 @@ class Experience extends Component {
     this.renderer.render(this.scene, this.camera);
   };
   render() {
-    console.log(props);
     return (
       <div>
         <div className="container mainpage">
@@ -125,7 +124,7 @@ class Experience extends Component {
 
 function mapStateToProps(state) {
   return {
-    iwiStories: state.iwiStories
+    iwiStories: state.iwiStory
   };
 }
 

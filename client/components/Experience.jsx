@@ -1,17 +1,29 @@
 import React, { Component } from "react";
 import * as THREE from "three";
 import "../three/OBJLoader";
+import { getStories } from "../actions/index";
+import { connect } from "react-redux";
 
 class Experience extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      obj: "/Ngaketest.obj"
+    };
+  }
+
   componentDidMount() {
     const width = this.mount.clientWidth;
     const height = this.mount.clientHeight;
+    const { iwiStories } = this.props;
+    let image = iwiStory.objBackGroundImg;
+    let obj = iwiStory.obj;
     //ADD SCENE
+    console.log(iwiStories, image, obj);
+
     this.scene = new THREE.Scene();
 
-    this.scene.background = new THREE.TextureLoader().load(
-      "https://cdn.stevejansen.photography/assets/uploads/2017/02/View-across-Wellington-Harbour.jpg"
-    );
+    this.scene.background = new THREE.TextureLoader().load(`${image}`);
     this.scene.backgroundSphere = true;
 
     //ADD RENDERER
@@ -43,7 +55,7 @@ class Experience extends Component {
     var loader = new THREE.OBJLoader();
     const thisScene = this.scene;
 
-    loader.load("/Ngaketest.obj", function(testObject) {
+    loader.load(`${obj || this.state.obj}`, function(testObject) {
       thisScene.add(testObject);
       testObject.scale.x = 1;
       testObject.scale.y = 1;
@@ -91,6 +103,7 @@ class Experience extends Component {
     this.renderer.render(this.scene, this.camera);
   };
   render() {
+    console.log(props);
     return (
       <div>
         <div className="container mainpage">
@@ -109,4 +122,11 @@ class Experience extends Component {
     );
   }
 }
-export default Experience;
+
+function mapStateToProps(state) {
+  return {
+    iwiStories: state.iwiStories
+  };
+}
+
+export default connect(mapStateToProps)(Experience);

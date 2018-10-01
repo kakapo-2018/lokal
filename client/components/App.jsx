@@ -22,38 +22,44 @@ import { runInThisContext } from "vm";
 import IwiListView from './IwiListView';
 import Login from './Login';
 
+import ScrollToTop from './ScrollToTop'
+
 const App = (props) => (
 
   
   <Router>
-    <div>
-      <Header />
+    <ScrollToTop>
+      <div>
+        <Header />
 
-      <div className="container-mainpage">
-         
-        {/* <Iwilanding />
-        <Viewstory /> */}
-        {/* <Journeylist /> */}
-        <Route exact path="/" component={Bodyheader} />
-        <Route exact path="/" component={Mapview} />
-        <Route exact path="/" component={IwiList} />
-        <Route exact path="/iwi" component={IwiListView} />
-        <Route exact path="/mapview" component={Mapview} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/header" component={Header} />
-        <Route exact path="/overview" component={Overview} />
-        <Route exact path="/addedit" component={Addedit} />
-        <Route exact path="/experience" component={Experience} />
-        <Route exact path="/iwilanding" component={Iwilanding} />
-        <Route exact path="/viewstory" component={Viewstory} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/postregister" component={Postregister} />
-        <Route exact path="/bibliography" component={Bibliography} />
-        <Route exact path="/journeylist" component={(Journeylist)} />
+        <div className="container-mainpage">
+          
+          {/* <Iwilanding />
+          <Viewstory /> */}
+          {/* <Journeylist /> */}
+          <Route exact path="/registered" component={Postregister} />
+          <Route exact path="/" component={Bodyheader} />
+          <Route exact path="/" component={Mapview} />
+          <Route exact path="/" component={IwiList} />
+          <Route exact path="/iwi" component={IwiListView} />
+          <Route exact path="/mapview" component={Mapview} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/header" component={Header} />
+          <Route exact path="/overview" component={Overview} />
+          <Route exact path="/addedit" component={Addedit} />
+          <Route exact path="/experience" component={Experience} />
+          <Route exact path="/iwilanding" component={Iwilanding} />
+          <Route exact path="/viewstory" component={Viewstory} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/postregister" component={Postregister} />
+          <Route exact path="/bibliography" component={Bibliography} />
+          <Route exact path="/journeylist" component={(Journeylist)} />
+        </div>
       </div>
-    </div>
+
+    </ScrollToTop>
   </Router>
 );
 

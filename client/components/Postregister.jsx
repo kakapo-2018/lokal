@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Bodyheadersmall from './Bodyheadersmall'
 
 class About extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class About extends React.Component {
     return (
       <div className="container mainpage">
         <hr />
+        <Bodyheadersmall />
         <h1>Kia ora rawa atu!</h1>
         <h4>
           Thank you for registering. A member of our team will be in touch
@@ -20,9 +22,9 @@ class About extends React.Component {
           <br />
           <br />
         </h4>
-        <button type="button" class="btn btn-block">
+        <a href="/"><button type="button" class="btn btn-block">
           Return to Journey
-        </button>
+        </button></a>
         <br />
         <br />
 

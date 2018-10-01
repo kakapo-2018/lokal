@@ -51,9 +51,7 @@ class ReactLeafletMap extends React.Component {
     };
   }
  
-  componentDidMount() {
-    this.props.dispatch(getStories())
-  } 
+  componentDidMount() {} 
 
   
   render() {

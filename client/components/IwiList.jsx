@@ -12,7 +12,7 @@ class IwiList extends React.Component {
 
   componentDidMount() {
     this.props.dispatch(getIwis())
-  }
+}
 
 
 
@@ -27,8 +27,7 @@ class IwiList extends React.Component {
 
         <hr />
         <div class="jumbotron">
-        {iwiInfo && <Viewstory />}
-          <h2 className="Journey">Journey</h2>
+          <h2 className="Journey"><Link to="/iwi">Journey</Link></h2>
 
           {iwiData.map(iwi => {
             return (

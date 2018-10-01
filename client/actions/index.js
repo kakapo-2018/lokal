@@ -28,7 +28,6 @@ export const getIwiStories = (story) => {
 }
 
 export function getStories(id) {
-  
   return (dispatch) => {
     return request
       .get(`/api/story/iwi/${id}`)

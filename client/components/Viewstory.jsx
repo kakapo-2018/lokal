@@ -24,7 +24,6 @@ class Viewstory extends React.Component {
 
         <h5>
           <img className="logo" src="logowhite.svg" />
-          Story as told by Kaumatua Matiu Rei
         </h5>
         <h3>
           {iwiInfo.length && iwiInfo[0].content}

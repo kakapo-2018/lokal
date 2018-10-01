@@ -19,7 +19,6 @@ class Experience extends Component {
     let image = iwiStory.objBackGroundImg;
     let obj = iwiStory.obj;
     //ADD SCENE
-    console.log(iwiStories, image, obj);
 
     this.scene = new THREE.Scene();
 
@@ -124,7 +123,7 @@ class Experience extends Component {
 
 function mapStateToProps(state) {
   return {
-    iwiStories: state.iwiStory
+    iwiStory: iwiStory
   };
 }
 

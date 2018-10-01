@@ -13,6 +13,7 @@ import {
   clearState,
   getStory
 } from "../actions/index";
+import Bodyheadersmall from './Bodyheadersmall'
 
 class IwiListView extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class IwiListView extends React.Component {
 
     return (
       <div className="container title">
-        Iwi List View
+        <Bodyheadersmall />
         <Mapcomp />
         <Journeylist />
         {iwiInfo && <Viewstory />}

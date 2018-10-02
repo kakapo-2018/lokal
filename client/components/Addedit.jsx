@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Bodyheader from "./Bodyheadersmall";
 
 class Addedit extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class Addedit extends React.Component {
     return (
       <div>
         <div className="container mainpage">
+        <Bodyheader />
           <hr />
           <h1>Add / Edit</h1>
           <div class="jumbotron">

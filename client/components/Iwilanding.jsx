@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import Journeylist from "./Journeylist";
+import IwiJourney from "./IwiJourney";
 import {getStories, getInfo} from '../actions/index'
 import Bodyheader from "./Bodyheadersmall";
 
@@ -34,7 +34,7 @@ class Iwilanding extends React.Component {
           <br />
           <br />
         </div>
-        <Journeylist />
+        <IwiJourney />
       </div>
     );
   }

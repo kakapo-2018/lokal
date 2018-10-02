@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { getStories, getStory, getInfo, getIwis } from "../actions/index";
+import Experience from './Experience'
 
 class Journeylist extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Journeylist extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { auth, logout, iwiStories, iwiInfo } = this.props;
+    const { auth, logout, iwiStories, iwiInfo, iwiStory } = this.props;
 
     return (
       <div className="container journey-container">
@@ -40,6 +41,7 @@ class Journeylist extends React.Component {
               <h4>{this.props.iwiStory.title}</h4>
               <p>{this.props.iwiStory.content}</p>
               <img src={`${this.props.iwiStory.image}`} />
+              {Object.keys(iwiStory).length > 0 && <Experience />}
             </div>
           )}
         </div>

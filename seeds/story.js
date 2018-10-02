@@ -16,7 +16,7 @@ exports.seed = function(knex, Promise) {
           image: "https://teara.govt.nz/files/a13194atl.jpg",
           obj: "/TeAroPa.obj",
           objBackGroundImg:
-            "https://cdn.stevejansen.photography/assets/uploads/2017/02/View-across-Wellington-Harbour.jpg"
+            "https://image.ibb.co/n4tt1z/Screen_Shot_2018_10_02_at_3_04_55_PM.png"
         },
         {
           id: 2,
@@ -27,8 +27,9 @@ exports.seed = function(knex, Promise) {
           content:
             "Uenuku is a taonga (treasure) of the Tainui people. Uenuku was the god of the rainbow, and the style of this striking representation is unlike most Māori carvings. Uenuku was lost during the battle of Hingakākā, between Ngāti Toa and Waikato tribes about 1780, and was rediscovered near Lake Ngāroto many years later. It was included in the acclaimed Te Māori exhibition of 1984, and is now the pride of the Te Awamutu museum. Here Uenuku, adorned with a feather cloak, is shown after its transfer from the old to the new museum building in 1975.",
           image: "https://teara.govt.nz/files/a13194atl.jpg",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Uenuku.obj",
+          objBackGroundImg:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rainbows.jpg/1200px-Rainbows.jpg"
         },
         {
           id: 3,

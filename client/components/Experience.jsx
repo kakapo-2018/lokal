@@ -9,7 +9,9 @@ class Experience extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      obj: "/Ngaketest.obj"
+      obj: "/Error.obj",
+      objBackGroundImg:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDcmzzllx_PgP7tJOkVWnULrbRKDad3MqEwA5IZ_YV39wI2vg-"
     };
   }
 

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack && node server",
     "dev": "nodemon --watch server & webpack --watch",
-    "postinstall": "webpack && knex migrate:latest"
+    "postinstall": "webpack && knex migrate:latest",
+    "test": "jest"
   },
   "author": "EDA",
   "license": "ISC",
@@ -21,6 +22,8 @@
     ]
   },
   "devDependencies": {
+    "babel-preset-expo": "^4.0.0",
+    "jest": "^23.6.0",
     "nodemon": "^1.14.12",
     "sqlite3": "^4.0.2"
   },
@@ -58,6 +61,7 @@
     "redux-thunk": "^2.3.0",
     "sodium": "^2.0.3",
     "superagent": "^4.0.0-beta.5",
+    "test": "^0.6.0",
     "three": "^0.97.0",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"

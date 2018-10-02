@@ -11,7 +11,7 @@ import {
   getIwis,
   getStories,
   clearState,
-  getStory
+  getStory,
 } from "../actions/index";
 import Bodyheadersmall from './Bodyheadersmall'
 
@@ -29,7 +29,7 @@ class IwiListView extends React.Component {
         <Bodyheadersmall />
         <Mapcomp />
         <Journeylist />
-        {iwiInfo && <Viewstory />}
+        <Experience />
       </div>
     );
   }

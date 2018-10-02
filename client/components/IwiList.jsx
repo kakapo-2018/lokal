@@ -6,7 +6,9 @@ import {
   getIwis,
   getStories,
   clearState,
-  getStory
+  getStory,
+  displayModal,
+  hideModal
 } from "../actions/index";
 import Viewstory from "./Viewstory";
 
@@ -23,7 +25,7 @@ class IwiList extends React.Component {
   }
 
   render() {
-    const { auth, logout, iwiData, iwiInfo, iwiStory } = this.props;
+    const { auth, logout, iwiData, iwiInfo, iwiStory, showModal } = this.props;
     return (
       <div className="container journey-container">
         <hr />
@@ -33,7 +35,6 @@ class IwiList extends React.Component {
         <hr />
         <div class="jumbotron">
           <h2 className="Journey">Local Iwi</h2>
-
           {iwiData.map(iwi => {
             return (
               <button
@@ -41,13 +42,15 @@ class IwiList extends React.Component {
                   this.props.dispatch(getStories(iwi.id));
                   this.props.dispatch(getInfo(iwi.id));
                   this.props.history.push("/iwi");
+                  this.props.dispatch(displayModal())
                 }}
+
                 key={iwi.iwi_name}
                 type="button"
                 class="btn btn-block"
               >
                 {iwi.iwi_name}
-              </button>
+                </button>
             );
           })}
 

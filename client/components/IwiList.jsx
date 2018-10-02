@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { getInfo, getIwis, getStories, clearState } from "../actions/index";
 import Viewstory from './Viewstory'
+import {displayModal, hideModal} from '../actions'
 
 
 
@@ -20,8 +21,8 @@ class IwiList extends React.Component {
 
 
   render() {
-
-    const { auth, logout, iwiData, iwiInfo } = this.props;
+    
+    const { auth, logout, iwiData, iwiInfo, showModal, dispatch } = this.props;
     return (
       <div className="container journey-container">
         <hr />
@@ -31,13 +32,13 @@ class IwiList extends React.Component {
         <hr />
         <div class="jumbotron">
           <h2 className="Journey">Journey</h2>
-
           {iwiData.map(iwi => {
             return (
               <button onClick={() => { 
                 this.props.dispatch(getStories(iwi.id))
                 this.props.dispatch(getInfo(iwi.id))
                 this.props.history.push('/iwi')
+                this.props.dispatch(displayModal())
                 }} key={iwi.iwi_name} type="button" class="btn btn-block">
                 {iwi.iwi_name}
                 

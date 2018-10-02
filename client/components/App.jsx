@@ -31,7 +31,7 @@ class App extends React.Component {
       <Router>
         <div>
           {showModal && <Modal>
-            <h1>Hello</h1>
+            <Viewstory />
           </Modal>}
           <button onClick={()=>dispatch(displayModal())}>CLICK ME</button>
     

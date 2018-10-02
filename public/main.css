@@ -134,7 +134,7 @@ h5 {
     right: 40px;
     bottom: 40px;
     border: 1px solid #ccc;
-    background: #fff;
+    background: black;
     overflow: auto;
     border-radius: 4px;
     outline: none;
@@ -143,6 +143,6 @@ h5 {
   }
   
 .modal, h1 {
-  color: black;
+  color: white;
 
 }

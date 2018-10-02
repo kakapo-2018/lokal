@@ -37,7 +37,6 @@ export function loginUser(creds) {
         dispatch(receiveLogin(userInfo));
        dispatch(getStories(userInfo.id))
        dispatch(getInfo(userInfo.id))
-       console.log(userInfo)
         document.location = "/#/iwilanding";
       })
       .catch(err => {

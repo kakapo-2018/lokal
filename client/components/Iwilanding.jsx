@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Journeylist from "./Journeylist";
 import {getStories, getInfo} from '../actions/index'
+import Bodyheader from "./Bodyheadersmall";
 
 class Iwilanding extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class Iwilanding extends React.Component {
     return (
       <div>
         <div className="container mainpage">
+        <Bodyheader />
           <hr />
           <h1>Kia ora Whanau</h1>
           <h3>Haere Mai Aroha from Ngati Koata</h3>

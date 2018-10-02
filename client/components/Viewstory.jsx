@@ -17,7 +17,7 @@ class Viewstory extends React.Component {
     return (
       <div className="container mainpage">
         <hr />
-        <h1>{iwiInfo.length && iwiInfo[0].iwi_name}</h1>
+        <h1>{(iwiInfo.length && iwiInfo[0].iwi_name) || ''}</h1>
         <img src="{iwiInfo.length && iwiInfo[0].image" />
         <br />
         <br />
@@ -25,7 +25,7 @@ class Viewstory extends React.Component {
         <h5>
           <img className="logo" src="logowhite.svg" />
         </h5>
-        <h3>{iwiInfo.length && iwiInfo[0].content}</h3>
+        <h3>{(iwiInfo.length && iwiInfo[0].content) || ''}</h3>
 
         <hr />
         {Object.keys(iwiStory).length > 0 && <Experience />}

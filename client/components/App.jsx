@@ -52,7 +52,6 @@ const App = (props) => (
           <Route exact path="/overview" component={Overview} />
           <Route exact path="/addedit" component={Addedit} />
           <Route exact path="/experience" component={Experience} />
-          <Route exact path="/iwilanding" component={Iwilanding} />
           <Route exact path="/viewstory" component={Viewstory} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />

@@ -21,23 +21,31 @@ import Mapcomp from "./Mapcomp";
 import { runInThisContext } from "vm";
 import IwiListView from './IwiListView';
 import Login from './Login';
+import Modal from "./Modal"
+import {displayModal, hideModal} from '../actions'
 
 import ScrollToTop from './ScrollToTop'
 
-const App = (props) => (
+class App extends React.Component {
+  render() {
+    const {showModal, dispatch}= this.props
+
+    console.log({showModal})
+    return (
 
   
   <Router>
-    <ScrollToTop>
-      <div>
-        <Header />
-
-        <div className="container-mainpage">
-          
-          {/* <Iwilanding />
-          <Viewstory /> */}
-          {/* <Journeylist /> */}
-         
+    <div>
+     {showModal && <Modal>
+            <Viewstory />
+          </Modal>}
+     <ScrollToTop>
+        
+       
+          <button onClick={()=>dispatch(displayModal())}>CLICK ME</button>
+    
+          <div className="container-mainpage" onClick={()=>dispatch(hideModal())}>
+         <Header />
           <Route exact path="/" component={Bodyheader} />
           <Route exact path="/" component={Mapview} />
           <Route exact path="/" component={IwiList} />
@@ -58,16 +66,12 @@ const App = (props) => (
           <Route exact path="/postregister" component={Postregister} />
           <Route exact path="/journeylist" component={(Journeylist)} />
         </div>
-      </div>
 
     </ScrollToTop>
+      </div>
   </Router>
-);
+  )}}
 
-const mapStateToProps = (state) => {
-  return {
-
-  };
-};
+const mapStateToProps = state => state
 
 export default connect(mapStateToProps)(App);

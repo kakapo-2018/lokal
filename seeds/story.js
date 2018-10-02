@@ -40,8 +40,9 @@ exports.seed = function(knex, Promise) {
           content:
             "These sketches relate to the battle of Gate Pā, on 28–30 April 1864, when British forces were defeated by Ngāi Te Rangi defenders. Across the top is a plan of the principal earthworks, dugouts and palisades made by the Māori defenders. At right is Penetaka Tuaia, regarded as the designer of the works. Below from left: the fortifications; their location (on a map with a south orientation); a sketch of a palisade; and a Māori flag flown on the day of the battle.",
           image: "https://teara.govt.nz/files/a5578atl.jpg",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/cannon.obj",
+          objBackGroundImg:
+            "http://homepages.ihug.co.nz/~Sxmitch/Images/Gate%20Pa%20Breach.jpg"
         },
         {
           id: 4,

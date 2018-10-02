@@ -2,12 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Journeylist from "./Journeylist";
+import {getStories, getInfo} from '../actions/index'
 
 class Iwilanding extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
+  // componentDidMount() {
+  //   this.props.dispatch(getStories());
+  //   this.props.dispatch(getInfo());
+  // }
 
   render() {
     const { auth, logout } = this.props;
@@ -32,4 +38,11 @@ class Iwilanding extends React.Component {
   }
 }
 
-export default Iwilanding;
+// const mapStateToProps = (state) => {
+//   return {
+//     iwiStories: state.iwiStories,
+//     iwiInfo: state.iwiInfo
+//   }
+// }
+
+export default Iwilanding

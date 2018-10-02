@@ -13,8 +13,9 @@ class About extends React.Component {
     const { auth, logout } = this.props;
     return (
       <div className="container mainpage">
-        <hr />
         <Bodyheader />
+        <hr />
+        
         <h1>About</h1>
         <h4>
           LOKAL is a local story telling app for Iwi to tell their stories about

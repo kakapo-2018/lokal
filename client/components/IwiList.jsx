@@ -32,7 +32,7 @@ class IwiList extends React.Component {
 
         <hr />
         <div class="jumbotron">
-          <h2 className="Journey">Journey</h2>
+          <h2 className="Journey">Local Iwi</h2>
 
           {iwiData.map(iwi => {
             return (

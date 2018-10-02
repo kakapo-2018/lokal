@@ -29,8 +29,6 @@ import ScrollToTop from './ScrollToTop'
 class App extends React.Component {
   render() {
     const {showModal, dispatch}= this.props
-
-    console.log({showModal})
     return (
 
   
@@ -44,7 +42,7 @@ class App extends React.Component {
        
           <button onClick={()=>dispatch(displayModal())}>CLICK ME</button>
     
-          <div className="container-mainpage" onClick={()=>dispatch(hideModal())}>
+          <div className="container-mainpage" /*onClick={()=>dispatch(hideModal())}*/>
          <Header />
           <Route exact path="/" component={Bodyheader} />
           <Route exact path="/" component={Mapview} />

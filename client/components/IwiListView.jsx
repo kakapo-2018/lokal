@@ -11,7 +11,7 @@ import {
   getIwis,
   getStories,
   clearState,
-  getStory
+  getStory,
 } from "../actions/index";
 import Bodyheadersmall from './Bodyheadersmall'
 

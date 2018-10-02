@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { getInfo } from "../actions/index";
-import Experience from "./Experience";
 
 class Viewstory extends React.Component {
   constructor(props) {
@@ -28,7 +27,7 @@ class Viewstory extends React.Component {
         <h3>{(iwiInfo.length && iwiInfo[0].content) || ''}</h3>
 
         <hr />
-        {Object.keys(iwiStory).length > 0 && <Experience />}
+    
       </div>
     );
   }

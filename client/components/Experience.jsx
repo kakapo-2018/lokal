@@ -32,7 +32,6 @@ class Experience extends Component {
     const { iwiStory } = this.props;
     let image = iwiStory.objBackGroundImg;
     let obj = iwiStory.obj;
-    console.log("mountt", this.mount, this.renderer);
     //ADD SCENE
 
     this.scene = new THREE.Scene();
@@ -94,7 +93,6 @@ class Experience extends Component {
     const material = new THREE.MeshBasicMaterial({ color: "#952e46" });
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);
-    console.log(this.scene);
     this.start();
   }
   componentWillUnmount() {

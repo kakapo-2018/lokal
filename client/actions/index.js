@@ -32,7 +32,6 @@ export function getStories(id) {
     return request
       .get(`/api/story/iwi/${id}`)
       .then(res => {
-        console.log(res.body, 'stories')
         dispatch(getIwiStories(res.body));
       })
       .catch(() => {
@@ -74,7 +73,6 @@ export function getStory(id) {
     return request
       .get(`/api/story/${id}`)
       .then(res => {
-        console.log({ torubleShot: res.body });
         dispatch(getIwiStory(res.body));
       })
       .catch(() => {

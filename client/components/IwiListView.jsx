@@ -29,7 +29,6 @@ class IwiListView extends React.Component {
         <Bodyheadersmall />
         <Mapcomp />
         <Journeylist />
-        <Experience />
       </div>
     );
   }

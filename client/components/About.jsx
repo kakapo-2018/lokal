@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Bodyheader from "./Bodyheadersmall";
 
 class About extends React.Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class About extends React.Component {
     return (
       <div className="container mainpage">
         <hr />
+        <Bodyheader />
         <h1>About</h1>
         <h4>
           LOKAL is a local story telling app for Iwi to tell their stories about
@@ -26,14 +28,15 @@ class About extends React.Component {
           <br />
           We hope you enjoy exploring. Ka kite!
         </h4>
-
-        <button type="button" class="btn btn-block">
+        <br />
+        <br />
+        <a href='/#/contact'><button type="button" class="btn btn-block">
           Contact us
-        </button>
-
-        <button type="button" class="btn btn-block">
-          Our Biliography
-        </button>
+        </button></a>
+        <br />
+        <a href='/#/bibliography'><button type="button" class="btn btn-block">
+          Our Bibliography
+        </button></a>
 
         <hr />
       </div>

@@ -3,10 +3,12 @@ import iwiData from './users'
 import iwiStories from './story'
 import iwiInfo from './iwiInfo'
 import iwiStory from './singleStory'
+import showModal from './showModal'
 
 export default combineReducers({
    iwiData,
    iwiStories,
    iwiInfo,
-   iwiStory
+   iwiStory,
+   showModal
 })

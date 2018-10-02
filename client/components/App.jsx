@@ -18,45 +18,53 @@ import Postregister from "./Postregister";
 import Contact from "./Contact";
 import Mapcomp from "./Mapcomp"
 import { runInThisContext } from "vm";
-import IwiListView from './IwiListView'
+import IwiListView from "./IwiListView";
+import Modal from "./Modal"
 
-const App = (props) => (
+import {displayModal, hideModal} from '../actions'
 
-  
-  <Router>
-    <div>
-      <Header />
+class App extends React.Component {
+  render() {
+    const {showModal, dispatch}= this.props
+    return (
 
-      <div className="container-mainpage">
-         
-        {/* <Iwilanding />
-        <Viewstory /> */}
-        {/* <Journeylist /> */}
-        <Route exact path="/" component={Bodyheader} />
-        <Route exact path="/" component={Mapview} />
-        <Route exact path="/" component={IwiList} />
-        <Route exact path="/iwi" component={IwiListView} />
-        <Route exact path="/Mapview" component={Mapview} />
-        <Route exact path="/About" component={About} />
-        <Route exact path="/Header" component={Header} />
-        <Route exact path="/Overview" component={Overview} />
-        <Route exact path="/Addedit" component={Addedit} />
-        <Route exact path="/Experience" component={Experience} />
-        <Route exact path="/Iwilanding" component={Iwilanding} />
-        <Route exact path="/Viewstory" component={Viewstory} />
-        <Route exact path="/Contact" component={Contact} />
-        <Route exact path="/Postregister" component={Postregister} />
-        <Route exact path="/Bibliography" component={Bibliography} />
-        <Route exact path="/Journeylist" component={(Journeylist)} />
-      </div>
-    </div>
-  </Router>
-);
+      <Router>
+        <div>
+          {showModal && <Modal>
+            <h1>Hello</h1>
+          </Modal>}
+          <button onClick={()=>dispatch(displayModal())}>CLICK ME</button>
+    
+          <div className="container-mainpage" onClick={()=>dispatch(hideModal())}>
+            
+           <Header />  
+            {/* <Iwilanding />
+            <Viewstory /> */}
+            {/* <Journeylist /> */}
+            <Route exact path="/" component={Bodyheader} />
+            <Route exact path="/" component={Mapview} />
+            <Route exact path="/" component={IwiList} />
+            <Route exact path="/iwi" component={IwiListView} />
+            <Route exact path="/Mapview" component={Mapview} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/Header" component={Header} />
+            <Route exact path="/Overview" component={Overview} />
+            <Route exact path="/Addedit" component={Addedit} />
+            <Route exact path="/Experience" component={Experience} />
+            <Route exact path="/Iwilanding" component={Iwilanding} />
+            <Route exact path="/Viewstory" component={Viewstory} />
+            <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/Postregister" component={Postregister} />
+            <Route exact path="/Bibliography" component={Bibliography} />
+            <Route exact path="/Journeylist" component={(Journeylist)} />
+          </div>
+        </div>
+      </Router>
+    )
+  }
+}
 
-const mapStateToProps = (state) => {
-  return {
 
-  };
-};
+const mapStateToProps = state => state;
 
 export default connect(mapStateToProps)(App);

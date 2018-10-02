@@ -89,3 +89,11 @@ export function clearState() {
     type: "RESET"
   }
 }
+
+export const displayModal = () => ({
+  type: 'MODAL_ON'
+})
+
+export const hideModal = () => ({
+  type: 'MODAL_OFF'
+})

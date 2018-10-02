@@ -40,9 +40,9 @@ class App extends React.Component {
      <ScrollToTop>
         
        
-          <button onClick={()=>dispatch(displayModal())}>CLICK ME</button>
+        
     
-          <div className="container-mainpage" /*onClick={()=>dispatch(hideModal())}*/>
+          <div className="container-mainpage">
          <Header />
           <Route exact path="/" component={Bodyheader} />
           <Route exact path="/" component={Mapview} />

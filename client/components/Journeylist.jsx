@@ -18,7 +18,7 @@ class Journeylist extends React.Component {
       <div className="container journey-container">
         <hr />
 
-        <h3>Here are {iwiInfo.length && iwiInfo[0].iwi_name} Journeys</h3>
+        <h3>Here are {(iwiInfo.length && iwiInfo[0].iwi_name) || 'your'} Journeys</h3>
 
         <div class="jumbotron">
           <h2 className="Journey">Journeys</h2>

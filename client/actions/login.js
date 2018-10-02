@@ -1,5 +1,6 @@
 import request from "../utils/api";
 import { saveUserToken } from "../utils/auth";
+import {getStories, getInfo} from '../actions/index'
 
 function requestLogin() {
   return {
@@ -34,10 +35,14 @@ export function loginUser(creds) {
       .then(response => {
         const userInfo = saveUserToken(response.body.token);
         dispatch(receiveLogin(userInfo));
-        document.location = "/iwilanding";
+       dispatch(getStories(userInfo.id))
+       dispatch(getInfo(userInfo.id))
+       console.log(userInfo)
+        document.location = "/#/iwilanding";
       })
       .catch(err => {
         dispatch(loginError(err.response.body.message));
       });
   };
 }
+

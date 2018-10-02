@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import {loginUser, loginError} from '../actions/login'
+import {getStories, getInfo} from '../actions/index'
+import Bodyheader from "./Bodyheadersmall";
 
 class Login extends React.Component {
   constructor(props) {
@@ -22,19 +24,21 @@ class Login extends React.Component {
 }
   submit(e) {
     e.preventDefault()
-    let {email, password} = this.state
+    let {email, password,} = this.state
     this.props.dispatch(loginUser({email, password}))
+
 }
 
   render() {
     const { auth } = this.props;
     return (
       <div className="container mainpage">
+      <Bodyheader />
         <hr />
         <h1>Login</h1>
 
         <form onSubmit={this.submit} className="form">
-          {auth.errorMessage && <span>{auth.errorMessage}</span>}
+         
           <div class="jumbotron">
             <div className="form-group">
               <label>Email address
@@ -49,6 +53,7 @@ class Login extends React.Component {
             </button>
             <br />
             <br />
+            {auth.errorMessage && <span>{auth.errorMessage}</span>}
             {/* <a className="password-links" href="http://www.ngatitoa.iwi.nz//">
               Forgotten your password?
             </a> */}
@@ -62,9 +67,10 @@ class Login extends React.Component {
   }
 }
 
-const mapStateToProps = ({auth}) => {
+const mapStateToProps = ( {auth}) => {
   return {
     auth
+  
   }
 }
 

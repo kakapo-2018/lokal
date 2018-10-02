@@ -23,7 +23,7 @@ function issue (req, res) {
 
 function createToken (user, secret) {
   return jwt.sign({
-    user_id:user.user_id,
+    id:user.id,
     email: user.email
   }, secret, {
     expiresIn: '24h'

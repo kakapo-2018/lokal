@@ -32,6 +32,7 @@ export function getStories(id) {
     return request
       .get(`/api/story/iwi/${id}`)
       .then(res => {
+        console.log(res.body, 'stories')
         dispatch(getIwiStories(res.body));
       })
       .catch(() => {

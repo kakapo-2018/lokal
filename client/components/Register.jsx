@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { registerUserRequest } from "../actions/register";
 import { loginError } from "../actions/login";
+import Bodyheader from "./Bodyheadersmall";
 
 class Register extends React.Component {
   constructor(props) {
@@ -50,6 +51,7 @@ class Register extends React.Component {
     const { auth, logout } = this.props;
     return (
       <div className="container mainpage">
+      <Bodyheader />
         <div id="">
           <form className="" onSubmit={this.submit}>
             <hr />

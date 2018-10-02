@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Bodyheader from "./Bodyheadersmall";
 
 class Bibliography extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class Bibliography extends React.Component {
     const { auth, logout } = this.props;
     return (
       <div className="container mainpage">
+      <Bodyheader />
         <hr />
         <h1>Bibliography</h1>
         <h4>
@@ -47,6 +49,10 @@ class Bibliography extends React.Component {
         </h4>
 
         <hr />
+        <br />
+        <a href='/#/about'><button type="button" class="btn btn-block">
+          Back to About
+        </button></a>
       </div>
     );
   }

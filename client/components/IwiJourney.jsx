@@ -42,11 +42,12 @@ class IwiJourneylist extends React.Component {
               </button>
             );
           })}
-          {this.props.iwiStory && (
+          {this.props.iwiStory.title && (
             <div>
               <br />
               
-              <h4>{this.props.iwiStory.title}</h4><a href= '/#/addedit'><button 
+              <h4>{this.props.iwiStory.title}</h4>
+              <a href= '/#/addedit'><button 
                  type="button"
                   class="btn btn-block">
                   Edit Journey

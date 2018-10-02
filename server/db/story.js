@@ -7,7 +7,6 @@ function getIwiStoriesByIwi(iwi_id) {
 function getIwiStoryByStoryId(id) {
   return db("story")
     .where("story.id", id)
-    .select("title", "content", "image", "obj", "objBackGroundImg")
     .first();
 }
 

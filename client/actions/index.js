@@ -93,3 +93,15 @@ export const displayModal = () => ({
  export const hideModal = () => ({
   type: 'MODAL_OFF'
 })
+
+export function updateStory(story) {
+  return dispatch => {
+    request
+      .put(`/api/story/${story.id}`)
+      .send(story)
+      .then(res => {
+        dispatch(getStory(story.id));
+      })
+      .catch(err => dispatch(loginError(err.response.body.message)));
+  };
+}

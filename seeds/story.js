@@ -53,8 +53,8 @@ exports.seed = function(knex, Promise) {
           content:
             "Pipitea Marae, a modern marae by today's standards, was built in the early 1980s to cater for the growing demand of an urban Maori population in the Wellington region. It signifies a place for people of all iwi and all races to meet, where traditional kawa and protocol are always keenly observed. It is the biggest Marae in Wellington and being an urban Marae, it is often hired out as a conference facility and/or entertainment venue.The land above the Marae is the site of Pipitea Pa. ",
           image: "",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Pipitea.obj",
+          objBackGroundImg: "https://preview.ibb.co/e8VqYe/Screen_Shot_2018_10_03_at_12_09_21_PM.png"
         },
         {
           id: 5,
@@ -65,8 +65,8 @@ exports.seed = function(knex, Promise) {
           content:
             "Looking out to sea beyond the lighthouse is the area known as Rukutoa. This has always been an important fishing ground and shellfish gathering area for inner harbour tribes. Rukutoa, named because only the most skilled divers were capāble of obtaining shellfish, is notorious for its strong currents and rough waters. Many lives have been lost in divers' quests for seafood at this site. Continue around the coats and stop at the carpark on the right just past the point.  ",
           image: "",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Rukutoa.obj",
+          objBackGroundImg: "https://media-cdn.tripadvisor.com/media/photo-s/0e/8c/f6/e7/dive-wellington.jpg"
         },
         {
           id: 6,
@@ -77,8 +77,8 @@ exports.seed = function(knex, Promise) {
           content:
             "On the east side of Point Halswell, Kai Whakaaua Waru was a kāinga occupied by the Ngāti Ira people. The kāinga site had gardens nearby as well as a stream. Early writers noted several large middens, with oven stones remaining in the vicinity and thought there may have been a kūmara (sweet potato) plantation nearby.Continue around the coast to Taipakupaku Pt. Look for the small rest area on your left just around Taipakupaku Pt (shortly past Taipakupaku Rd). The first six or so houses around this point are situated on an old burial site.",
           image: "",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Kainga.obj",
+          objBackGroundImg: "https://image.ibb.co/ggr6pK/Screen_Shot_2018_10_03_at_3_45_30_PM.png"
         },
         {
           id: 8,
@@ -89,8 +89,8 @@ exports.seed = function(knex, Promise) {
           content:
             "Whetū Kairangi was a major fortified pā site built by Tara when he first brought his people to settle. The name of the pā itself refers to the stars in the heavens, although there are two possible explanations of the name's origin. One is that those in the pā could see no other villages and at night had only the stars to look at. The other states that the pā was so named because at night, from the beach below, the cooking fires looked as if they were stars in the sky.                      The pā was protected from surprise attack by outlying forts, and provided a safe retreat for the inhabitants of the surrounding unprotected villages. Just along the ridge to the north was the smaller pā of Kakariki-Hutia. It got its name from a battle where the chief of the pā grabbed some uncooked pārakeets and ate them as he ran to battle. The chief prevailed in the ensuing struggle and the victory was attributed to the fortifying properties of the uncooked birds. This Ngāti Ira pā was later occupied briefly by some of Wi Tako Ngatata's Te Atiawa followers before they moved off to eventually settle in Kumutoto Pā in the late 1830s. ",
           image: "",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Pa.obj",
+          objBackGroundImg: "https://preview.ibb.co/dtO0ie/Screen_Shot_2018_10_03_at_3_59_42_PM.png"
         },
         {
           id: 9,

@@ -17,6 +17,7 @@ router.get("/iwi/:id", (req, res) => {
 router.get("/:id", (req, res) => {
   getIwiStoryByStoryId(req.params.id)
     .then(story => {
+      // story.content=JSON.parse(story.content)
       res.json(story)
     })
     .catch(err => res.status(500)
@@ -31,7 +32,7 @@ router.post('/:id', (req, res) => {
   const post = {
     iwi_id,
     title,
-    content: JSON.stringify(content),
+    content,
     image
   }
   postStory(post)
@@ -46,7 +47,7 @@ router.put('/:id', (req, res, next) => {
   const post = {
     id: id,
     title,
-    content: JSON.stringify(content),
+    content,
     image
   }
   editStory(post)

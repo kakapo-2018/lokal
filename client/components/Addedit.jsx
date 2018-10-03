@@ -10,7 +10,7 @@ class Addedit extends React.Component {
     this.state = {
       iwiStory: {...props.iwiStory}
     };
-
+    console.log({props})
     this.handleChange = this.handleChange.bind(this)
     this.submit = this.submit.bind(this);
   }
@@ -60,7 +60,7 @@ class Addedit extends React.Component {
                   <span class="input-group-text">Upload Image</span>
                 </div>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" value={this.state.iwiStory.image} name="image" onChange={this.handleChange}/>
+                  <input type="file" class="custom-file-input" name="image" onChange={this.handleChange}/>
                   <label class="custom-file-label" for="inputGroupFile01">
                     Choose Image
                   </label>
@@ -72,7 +72,7 @@ class Addedit extends React.Component {
                   <span class="input-group-text">Upload Audio</span>
                 </div>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" value={this.state.iwiStory.obj} name="obj" onChange={this.handleChange}/>
+                  <input type="file" class="custom-file-input" name="obj" onChange={this.handleChange}/>
                   <label class="custom-file-label" for="inputGroupFile01">
                     Choose Audio
                   </label>

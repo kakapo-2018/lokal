@@ -53,8 +53,8 @@ exports.seed = function(knex, Promise) {
           content:
             "Pipitea Marae, a modern marae by today's standards, was built in the early 1980s to cater for the growing demand of an urban Maori population in the Wellington region. It signifies a place for people of all iwi and all races to meet, where traditional kawa and protocol are always keenly observed. It is the biggest Marae in Wellington and being an urban Marae, it is often hired out as a conference facility and/or entertainment venue.The land above the Marae is the site of Pipitea Pa. ",
           image: "",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Pipitea.obj",
+          objBackGroundImg: "https://preview.ibb.co/e8VqYe/Screen_Shot_2018_10_03_at_12_09_21_PM.png"
         },
         {
           id: 5,
@@ -65,8 +65,8 @@ exports.seed = function(knex, Promise) {
           content:
             "Looking out to sea beyond the lighthouse is the area known as Rukutoa. This has always been an important fishing ground and shellfish gathering area for inner harbour tribes. Rukutoa, named because only the most skilled divers were capāble of obtaining shellfish, is notorious for its strong currents and rough waters. Many lives have been lost in divers' quests for seafood at this site. Continue around the coats and stop at the carpark on the right just past the point.  ",
           image: "",
-          obj: "",
-          objBackGroundImg: ""
+          obj: "/Rukutoa.obj",
+          objBackGroundImg: "https://media-cdn.tripadvisor.com/media/photo-s/0e/8c/f6/e7/dive-wellington.jpg"
         },
         {
           id: 6,

@@ -48,9 +48,9 @@ class Experience extends Component {
     //ADD CAMERA
     this.camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 2000);
 
-    this.camera.position.z = -25;
-    this.camera.position.y = 0;
-    this.camera.position.x = 0;
+    this.camera.position.z = -20;
+    this.camera.position.y = 10;
+    this.camera.position.x = 10;
     var point = new THREE.Vector3(0, 0, 0);
     this.camera.lookAt(point);
 
@@ -78,7 +78,7 @@ class Experience extends Component {
       testObject.position.z = 0;
       testObject.rotation.x = 90;
       testObject.rotation.y = 0;
-      testObject.rotation.z = 0;
+      testObject.rotation.z = 90;
       var animate = function() {
         requestAnimationFrame(animate);
         testObject.rotation.x += 0;
@@ -89,7 +89,7 @@ class Experience extends Component {
     });
 
     //ADD CUBE
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const geometry = new THREE.BoxGeometry(0.001, 0.001, 0.001);
     const material = new THREE.MeshBasicMaterial({ color: "#952e46" });
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Bodyheader from "./Bodyheadersmall";
 
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -11,16 +12,19 @@ class Contact extends React.Component {
 
   render() {
     const { auth, logout } = this.props;
+
     return (
       <div className="container mainpage">
-      <Bodyheader />
+        <Bodyheader />
         <hr />
+
         <h1>Contact</h1>
         <h3>LOKAL was developed by;</h3>
         <br />
         <br />
 
         <div className="row">
+
           <div className="col-lg-3">
             <a href="https://github.com/dani-smith">
               <img
@@ -63,15 +67,17 @@ class Contact extends React.Component {
               <br />
               <h3 className="contact-links">Matt</h3>
             </a>
-          </div>
-        </div>
-        
 
+          </div>
+
+        </div>
         <hr />
         <br />
+
         <a href='/#/about'><button type="button" class="btn btn-block">
           Back to About
         </button></a>
+
       </div>
     );
   }

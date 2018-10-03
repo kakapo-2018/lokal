@@ -10,6 +10,7 @@ class Bodyheader extends React.Component {
 
   render() {
     const { auth, logout } = this.props;
+
     return (
       <div className="container title">
         <img src="titlelarge.svg" className="header-title" />

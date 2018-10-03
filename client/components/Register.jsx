@@ -5,6 +5,7 @@ import { registerUserRequest } from "../actions/register";
 import { loginError } from "../actions/login";
 import Bodyheader from "./Bodyheadersmall";
 
+
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -49,122 +50,132 @@ class Register extends React.Component {
 
   render() {
     const { auth, logout } = this.props;
+
     return (
       <div className="container mainpage">
-      <Bodyheader />
-        <div id="">
-          <form className="" onSubmit={this.submit}>
-            <hr />
-            {auth.errorMessage && <span className="">{auth.errorMessage}</span>}
+        <Bodyheader />
 
-            <h1>Register</h1>
+          <div id="">
 
-            <div class="jumbotron">
-              <div className="form-group">
-                <label className="">
-                  Iwi
-                  <input
-                    className="form-control"
-                    label="Iwi"
-                    name="iwi_name"
-                    onChange={this.updateDetails}
-                  />
-                </label>
+            <form className="" onSubmit={this.submit}>
+              <hr />
+              {auth.errorMessage && <span className="">{auth.errorMessage}</span>}
 
-                <label className="">
-                  Email
-                  <input
-                    required
-                    className="form-control"
-                    label="Email"
-                    placeholder="email"
-                    type="text"
-                    name="email"
-                    onChange={this.updateDetails}
-                  />
-                </label>
+              <h1>Register</h1>
 
-                <br />
+              <div class="jumbotron">
 
-                <div className="form-control">
+                <div className="form-group">
                   <label className="">
-                    Password
+                    Iwi
                     <input
-                      required
-                      className=""
-                      placeholder="Password"
-                      type="password"
-                      name="password"
+                      className="form-control"
+                      label="Iwi"
+                      name="iwi_name"
                       onChange={this.updateDetails}
                     />
                   </label>
-                </div>
 
-                <div className="form-control">
                   <label className="">
-                    Confirm Password
+                    Email
                     <input
                       required
-                      className=""
-                      placeholder="Confirm Password"
-                      type="password"
-                      name="confirm_password"
+                      className="form-control"
+                      label="Email"
+                      placeholder="email"
+                      type="text"
+                      name="email"
                       onChange={this.updateDetails}
                     />
                   </label>
+
+                  <br />
+
+                  <div className="form-control">
+                    <label className="">
+                      Password
+                      <input
+                        required
+                        className=""
+                        placeholder="Password"
+                        type="password"
+                        name="password"
+                        onChange={this.updateDetails}
+                      />
+                    </label>
+                  </div>
+
+                  <div className="form-control">
+                    <label className="">
+                      Confirm Password
+                      <input
+                        required
+                        className=""
+                        placeholder="Confirm Password"
+                        type="password"
+                        name="confirm_password"
+                        onChange={this.updateDetails}
+                      />
+                    </label>
+                  </div>
+
+                  <label>Contact Name</label>
+                  <input
+                    className="form-control"
+                    label="contact_name"
+                    name="contact_name"
+                    onChange={this.updateDetails}
+                  />
+
+                  <label>Address</label>
+                  <input
+                    className="form-control"
+                    label="location"
+                    name="location"
+                    onChange={this.updateDetails}
+                  />
+
+                  <label>Phone number</label>
+                  <input
+                    className="form-control"
+                    label="phone_number"
+                    name="phone_number"
+                    onChange={this.updateDetails}
+                  />
+
+                  <div>
+                    <br />
+                    <br />
+
+                    <button
+                      id="register_submit"
+                      className="btn btn-primary btn-lg"
+                      value="Register"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                    <br />
+                    <br />
+
+                    <a
+                      className="password-links"
+                      href="http://www.ngatitoa.iwi.nz//"
+                    >
+                      Forgotten your password?
+                    </a>
+
+                  </div>
+
                 </div>
 
-                <label>Contact Name</label>
-                <input
-                  className="form-control"
-                  label="contact_name"
-                  name="contact_name"
-                  onChange={this.updateDetails}
-                />
-
-                <label>Address</label>
-                <input
-                  className="form-control"
-                  label="location"
-                  name="location"
-                  onChange={this.updateDetails}
-                />
-
-                <label>Phone number</label>
-                <input
-                  className="form-control"
-                  label="phone_number"
-                  name="phone_number"
-                  onChange={this.updateDetails}
-                />
-
-                <div>
-                  <br />
-                  <br />
-                  <button
-                    id="register_submit"
-                    className="btn btn-primary btn-lg"
-                    value="Register"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-
-                  <br />
-                  <br />
-                  <a
-                    className="password-links"
-                    href="http://www.ngatitoa.iwi.nz//"
-                  >
-                    Forgotten your password?
-                  </a>
-                </div>
               </div>
-            </div>
+              <hr />
 
-            <hr />
-          </form>
-        </div>
+            </form>
+
+          </div>
+
       </div>
     );
   }

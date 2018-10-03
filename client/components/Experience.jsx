@@ -5,6 +5,7 @@ import { getStory } from "../actions/index";
 import { connect } from "react-redux";
 import { log } from "core-js";
 
+
 class Experience extends Component {
   constructor(props) {
     super(props);
@@ -122,6 +123,7 @@ class Experience extends Component {
   render() {
     return (
       <div>
+
         <div className="container mainpage">
           <hr />
           <h1>Experience</h1>
@@ -133,7 +135,9 @@ class Experience extends Component {
             }}
           />
           <hr />
+
         </div>
+
       </div>
     );
   }

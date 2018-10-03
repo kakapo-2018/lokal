@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Mapcomp from "./Mapcomp";
 import Journeylist from "./Journeylist";
 
+
 class Mapview extends React.Component {
   constructor(props) {
     super(props);
@@ -12,6 +13,7 @@ class Mapview extends React.Component {
 
   render() {
     const { auth, logout } = this.props;
+
     return (
       <div className="container mainpage">
         <hr />
@@ -20,8 +22,6 @@ class Mapview extends React.Component {
           <Mapcomp />
           <br />
           <br />
-        
-
         <hr />
       </div>
     );

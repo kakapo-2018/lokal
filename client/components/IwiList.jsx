@@ -26,13 +26,14 @@ class IwiList extends React.Component {
 
   render() {
     const { auth, logout, iwiData, iwiInfo, iwiStory, showModal } = this.props;
+
     return (
       <div className="container journey-container">
         <hr />
         <h1>Haere Mai! </h1>
         <h3>Welcome to Te Whanganui a Tara Wellington</h3>
-
         <hr />
+
         <div class="jumbotron">
           <h2 className="Journey">Local Iwi</h2>
           {iwiData.map(iwi => {
@@ -50,7 +51,8 @@ class IwiList extends React.Component {
                 class="btn btn-block"
               >
                 {iwi.iwi_name}
-                </button>
+              </button>
+
             );
           })}
 
@@ -59,6 +61,7 @@ class IwiList extends React.Component {
             Ngati Toa
           </button> */}
         </div>
+
       </div>
     );
   }

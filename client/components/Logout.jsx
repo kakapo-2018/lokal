@@ -12,6 +12,7 @@ class Logout extends React.Component {
 
   render() {
     const {auth, logout } = this.props
+    
     return (
         <div className="navbar-end">
             {auth.isAuthenticated

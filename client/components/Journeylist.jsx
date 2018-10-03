@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { getStories, getStory, getInfo, getIwis } from "../actions/index";
 import Experience from './Experience'
 
+
 class Journeylist extends React.Component {
   constructor(props) {
     super(props);
@@ -33,9 +34,11 @@ class Journeylist extends React.Component {
               >
                 {story.title}
               </button>
+
             );
           })}
           {this.props.iwiStory && (
+
             <div>
               <br />
               <h4>{this.props.iwiStory.title}</h4>
@@ -43,9 +46,12 @@ class Journeylist extends React.Component {
               <img src={`${this.props.iwiStory.image}`} />
               {Object.keys(iwiStory).length > 0 && <Experience />}
             </div>
+            
           )}
+
         </div>
         <hr />
+
       </div>
     );
   }

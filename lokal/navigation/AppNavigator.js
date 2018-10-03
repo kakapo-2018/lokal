@@ -1,10 +1,16 @@
 import React from 'react';
-import { createSwitchNavigator } from 'react-navigation';
+import { Platform, } from 'react-native';
+import { createStackNavigator} from 'react-navigation';
 
-import MainTabNavigator from './MainTabNavigator';
+import HomeScreen from '../screens/HomeScreen';
+import IwiJourneyScreen from '../screens/IwiJourneyScreen';
+import ARScreen from '../screens/ARScreen';
 
-export default createSwitchNavigator({
-  // You could add another route here for authentication.
-  // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-  Main: MainTabNavigator,
+
+export default AppNavigator = createStackNavigator({
+  Journey: { screen: IwiJourneyScreen},
+  Home: { screen: HomeScreen},
+  AR: { screen: ARScreen},
+}, {
+  initialRouteName: 'AR',
 });
